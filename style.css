@@ -127,7 +127,7 @@ body{
 	margin: 0 auto;
 	padding: 100px 100px;
 	border-radius: 50%;
-	border: black 2px solid; 
+	border: black 3px solid; 
 	width: 200px;
 	height: 160px;
 	transition: 0.3s;
@@ -140,6 +140,7 @@ body{
 	background-color: black;
 }
 .welcome-text {
+	font-weight: bold;
 	pointer-events: none;
 	cursor: pointer;
 	transition: 0.3s;
@@ -208,12 +209,53 @@ body{
   100% { opacity: 1;padding-left:481px;}
 }
 
+/* services */
+.services {
+	width: 72em;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.web-developement,.web-design,.web-storage,.web-security {
+	margin: 0 0 0 5px;
+	float: left;
+	border: 3px solid #000;
+	width: 17.25em;
+	height: 320px;
+}
+
+.wd-img,.wde-img,.wds-img,.wdse-img  {
+	padding: 90px 0 0 0;
+	margin: 0 auto;
+	width: 60px;
+}
+
+.wd-hd,.wde-hd,.wds-hd,.wdse-hd {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0 0 0;
+	text-align: center;
+	width: 120px;
+	margin: 0 auto;
+}
+
+.wd-inText {
+	margin: 0 auto;
+	text-align: center;
+	width: 260px;
+}
+
+.wde-hd,.wds-hd,.wdse-hd {
+	width: 100px;
+}
+
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .nav-icon {
 	font-size: 45px;
 }
-
 
 .main-content{
 	width: 100%;
