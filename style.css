@@ -76,6 +76,7 @@ body{
 .wd {
 	pointer-events: none;
 	animation: leftslide 0.3s;
+	transition: 1s;
 }
 
 @-webkit-keyframes leftslide {
@@ -103,6 +104,7 @@ body{
 	pointer-events: none;
 	padding-left:481px;
 	animation: rightslide 0.3s;
+	transition: 1s;
 }
 
 @-webkit-keyframes rightslide {
@@ -170,6 +172,7 @@ body{
 .wds {
 	pointer-events: none;
 	animation: leftslide 0.3s;
+	transition: 1s;
 }
 
 @-webkit-keyframes leftslide {
@@ -198,6 +201,7 @@ body{
 	pointer-events: none;
 	padding-left:481px;
 	animation: rightslide 0.3s;
+	transition: 1s;
 }
 
 @-webkit-keyframes rightslide {
@@ -212,11 +216,15 @@ body{
 /* services */
 .services {
 	width: 72em;
-	height: 400px;
+	height: 350px;
 	margin: 0 auto;
 }
 
-.web-developement,.web-design,.web-storage,.web-security {
+.web-development,.web-design,.web-storage,.web-security {
+	cursor: pointer;
+	overflow: hidden;
+	z-index: 10;
+	position: relative;
 	margin: 0 0 0 5px;
 	float: left;
 	border: 3px solid #000;
@@ -225,31 +233,77 @@ body{
 }
 
 .wd-img,.wde-img,.wds-img,.wdse-img  {
-	padding: 90px 0 0 0;
+	padding-top: 90px;
 	margin: 0 auto;
 	width: 60px;
+	transition: 0.2s;
 }
 
 .wd-hd,.wde-hd,.wds-hd,.wdse-hd {
 	font-size: 20px;
 	font-weight: bold;
-	padding: 10px 0 0 0;
+	padding-top: 10px;
+	padding-bottom: 110px;
 	text-align: center;
 	width: 120px;
+	transition: 0.2s;
 	margin: 0 auto;
 }
 
-.wd-inText {
+.wd-inText,.wde-inText,.wds-inText,.wdse-inText {
+	font-size: 15px;
+	transition: 0.2s fade-in;
 	margin: 0 auto;
 	text-align: center;
-	width: 260px;
+	width: 240px;
 }
 
 .wde-hd,.wds-hd,.wdse-hd {
 	width: 100px;
 }
 
+/* on hover cards */
+.wdx-IMG,.wdex-IMG,.wdsx-IMG,.wdsxe-IMG {
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 65px;
+	animation: wdx-uplift 0.2s;
+}
 
+/* image lift */
+@-webkit-keyframes wdx-uplift {
+  0%   { opacity: 0;padding-top:90px;}
+  100% { opacity: 1;padding-top:20px;}
+}
+@keyframes wdx-uplift {
+  0%   { opacity: 0;padding-top:90px;}
+  100% { opacity: 1;padding-top:20px;}
+}
+
+.wdh-HD,.wdex-HD,.wdsx-HD,.wdsxe-HD {
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	width: 120px;
+	margin: 0 auto;
+	animation: wdh-uplift 0.2s;
+}
+
+.wdex-HD,.wdsx-HD,.wdsxe-HD {
+	width: 110px;
+} 
+
+/* header lift */
+@-webkit-keyframes wdh-uplift {
+  0%   { opacity: 0;padding-top:10px;padding-bottom: 30px;}
+  100% { opacity: 1;padding-top:30px;padding-bottom: 30px;}
+}
+@keyframes wdh-uplift {
+  0%   { opacity: 0;padding-top:10px;padding-bottom: 30px;}
+  100% { opacity: 1;padding-top:30px;padding-bottom: 30px;}
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
