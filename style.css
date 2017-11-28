@@ -119,7 +119,7 @@ body{
 .intro-bubble{
 	position: relative;
 	margin: 0 auto;
-	width: 45em;
+	width: 46em;
 	padding-top: 100px;
 }
 
@@ -133,7 +133,7 @@ body{
 	width: 200px;
 	height: 160px;
 	transition: 0.3s;
-	font-size: 29px;
+	font-size: 27px;
 	z-index: 1;
 }
 
@@ -146,7 +146,7 @@ body{
 	pointer-events: none;
 	cursor: pointer;
 	transition: 0.3s;
-	padding-top: 15px;
+	padding-top: 25px;
 }
 
 .replace-text {
@@ -221,13 +221,13 @@ body{
 }
 
 .web-development,.web-design,.web-storage,.web-security {
+	display: inline-block;
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 10;
 	position: relative;
 	margin: 0 0 0 5px;
 	float: left;
-	border: 3px solid #000;
 	width: 17.25em;
 	height: 320px;
 }
@@ -243,9 +243,9 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 	padding-top: 10px;
-	padding-bottom: 110px;
+	padding-bottom: 112px;
 	text-align: center;
-	width: 120px;
+	width: 116px;
 	transition: 0.2s;
 	margin: 0 auto;
 }
@@ -327,7 +327,50 @@ body{
 }
 
 .welcome-text {
-padding-top: 20px;
+padding-top: 27px;
+}
+
+.services {
+	width: 45em;
+	height: 470px;
+	margin: 0 auto;
+}
+
+.web-development,.web-design,.web-storage,.web-security {
+	height: 420px;
+	width: 32.25em;
+	padding: 0 100px;
+	position: absolute;
+}
+
+.web-design,.web-storage,.web-security {
+	display: none;
+}
+
+.wd-img,.wde-img,.wds-img,.wdse-img  {
+	padding-top: 60px;
+	margin: 0 auto;
+	width: 90px;
+	transition: 0.2s;
+}
+
+.wd-hd,.wde-hd,.wds-hd,.wdse-hd {
+	font-size: 34px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 216px;
+	transition: 0.2s;
+	margin: 0 auto;
+}
+
+.wd-inText,.wde-inText,.wds-inText,.wdse-inText {
+	font-size: 30px;
+	transition: 0.2s fade-in;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
 }
 
 }
