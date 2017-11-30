@@ -7,7 +7,6 @@ body{
 }
 
 .nav-icon {
-	position: fixed;
 	float: left;
 	font-size:30px;
 	width: 30px;
@@ -219,16 +218,18 @@ body{
 	height: 350px;
 	margin: 0 auto;
 }
-
+.prev, .next {
+	display: none;
+}
 .web-development,.web-design,.web-storage,.web-security {
 	display: inline-block;
 	cursor: pointer;
 	overflow: hidden;
 	z-index: 10;
 	position: relative;
-	margin: 0 0 0 5px;
+	margin: 0 auto;
 	float: left;
-	width: 17.25em;
+	width: 17.85em;
 	height: 320px;
 }
 
@@ -243,13 +244,20 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 	padding-top: 10px;
-	padding-bottom: 112px;
+	padding-bottom: 110px;
 	text-align: center;
 	width: 116px;
 	transition: 0.2s;
 	margin: 0 auto;
 }
 
+.wd-more {
+	display: none;
+}
+
+.wd-back,.wde-back,.wds-back,.wdse-back {
+	display: none;
+}
 .wd-inText,.wde-inText,.wds-inText,.wdse-inText {
 	font-size: 15px;
 	transition: 0.2s fade-in;
@@ -264,7 +272,7 @@ body{
 
 /* on hover cards */
 .wdx-IMG,.wdex-IMG,.wdsx-IMG,.wdsxe-IMG {
-	padding-top: 20px;
+	padding: 20px 110px 0 110px;
 	margin: 0 auto;
 	width: 65px;
 	animation: wdx-uplift 0.2s;
@@ -321,57 +329,79 @@ body{
 }
 
 .welcome-message {
+	border: black 4px solid; 
 	font-size: 35px;
 	width: 250px;
 	height: 200px;
 }
 
 .welcome-text {
+	font-size: 37px;
 padding-top: 27px;
 }
 
 .services {
-	width: 45em;
-	height: 470px;
+	width: 47em;
 	margin: 0 auto;
+	overflow-y: hidden;
+	height: 750px;
+	position: relative;
+  	display: block;
 }
 
 .web-development,.web-design,.web-storage,.web-security {
-	height: 420px;
-	width: 32.25em;
-	padding: 0 100px;
-	position: absolute;
-}
-
-.web-design,.web-storage,.web-security {
-	display: none;
+	transition: 0.9s ease;
+	display: block;
+	height: 350px;
+  	margin: 0 auto;
+  	width: 16.25em;
+  	padding:0 55px;
 }
 
 .wd-img,.wde-img,.wds-img,.wdse-img  {
-	padding-top: 60px;
-	margin: 0 auto;
-	width: 90px;
-	transition: 0.2s;
+	transition: 0.9s ease;
+	padding-top: 50px;
+	width: 120px;
 }
 
 .wd-hd,.wde-hd,.wds-hd,.wdse-hd {
-	font-size: 34px;
-	font-weight: bold;
-	padding-top: 10px;
+	transition: 0.9s ease;
 	padding-bottom: 10px;
-	text-align: center;
-	width: 216px;
-	transition: 0.2s;
+	font-size: 32px;
+	width: 120px;
+}
+
+.wd-hd {
+	width: 160px;
+}
+
+.wd-more {
+	display: block;
+	width: 70px;
+	border-bottom: 3px solid #000;
+	font-size: 32px;
 	margin: 0 auto;
+	padding: 5px 15px;
 }
 
 .wd-inText,.wde-inText,.wds-inText,.wdse-inText {
-	font-size: 30px;
-	transition: 0.2s fade-in;
-	margin: 0 auto;
-	text-align: center;
-	width: 100%;
+	transition: 0.9s ease;
+	font-size: 32px;
+	width: 19em;
+	padding:50px 0;
 }
+
+.wd-back,.wde-back,.wds-back,.wdse-back {
+	display: block;
+	width: 70px;
+	border-bottom: 3px solid #000;
+	font-size: 32px;
+	margin: 0 auto;
+	padding: 5px 15px;
+}
+
+.container1 {
+	width: 38em;
 
 }
 
