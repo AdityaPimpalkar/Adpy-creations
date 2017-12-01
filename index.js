@@ -96,8 +96,61 @@ $(".web-security").mouseout(
 
 });
 
+function mediaSize() { 
+if (window.matchMedia('(max-width : 480px)').matches) {
+	$(".web-development").unbind('mouseover mouseout')
+	$(".web-design").unbind('mouseover mouseout')
+	$(".web-storage").unbind('mouseover mouseout')
+	$(".web-security").unbind('mouseover mouseout');
 
+	$(".wd-more").click(function(){
+		$(".web-design,.web-storage,.web-security").css({"display": "none","animation":"service-fadeout-in 0.9s"});
+		$(".web-development").css({
+			"width":"47em",
+			"height":"650px",
+			"padding":"0"
+		});
+		$(".wd-more").css({
+			"background-color": "#000",
+			"color": "#fff"
+		});
+		$(".wd-inText").css({
+			"font-size":"32px",
+			"width":"19em",
+			"padding":"50px 0"
+		});
+		$(".wd-back").css({
+			"display":"block"
+		});
+	});
 
+	$(".wd-back").click(function(){
+		$(".web-design,.web-storage,.web-security").css({"display": "block","animation":"service-fadeout-in 9s"});
+		$(".web-development").css({
+			"width":"16.25em",
+			"height":"350px",
+			"padding":"0 55px"
+		});
+		$(".wd-more").css({
+			"background-color": "",
+			"color": ""
+		});
+		$(".wd-inText").css({
+			"font-size":"15px",
+			"width":"240px",
+			"padding":""
+		});
+		$(".wd-back").css({
+			"background-color":"#fff",
+			"color":"#000",
+			"display":"none"
+		});
+	});
+
+	}
+}
+window.addEventListener('resize', mediaSize, false);
+});
 var images = ['1.jpg','2.jpg','3.jpg'];
 var i=0;
 function plusSlides() {
