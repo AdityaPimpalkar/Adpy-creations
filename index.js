@@ -6,6 +6,7 @@ function closeNav() {
     $(".nav").css("width","0px");
 }
 
+
  $(document).ready(function() { 
 
 $(".welcome-message").mouseover(
@@ -18,9 +19,7 @@ $(".welcome-message").mouseover(
 		$(".wds").css("display","");
 		$(".wdse").css("display","");
 	}
-);
-
-$(".welcome-message").mouseout(
+).mouseout(
 	function() {
 		$(".replace-text").replaceWith('<div class="welcome-text">Welcome!<br>to<br>Adpi Creations</div>');
 		$(".wd").css("display","none");
@@ -36,9 +35,7 @@ $(".web-development").mouseover(
 		$(".wd-hd").removeClass("wd-hd").addClass("wdh-HD");
 		$(".wd-inText").css("display","");
 	}
-);
-
-$(".web-development").mouseout(
+).mouseout(
 	function() {
 		$(".wdx-IMG").removeClass("wdx-IMG").addClass("wd-img");
 		$(".wdh-HD").removeClass("wdh-HD").addClass("wd-hd");
@@ -52,9 +49,7 @@ $(".web-design").mouseover(
 		$(".wde-hd").removeClass("wde-hd").addClass("wdex-HD");
 		$(".wde-inText").css("display","");
 	}
-);
-
-$(".web-design").mouseout(
+).mouseout(
 	function() {
 		$(".wdex-IMG").removeClass("wdex-IMG").addClass("wde-img");
 		$(".wdex-HD").removeClass("wdex-HD").addClass("wde-hd");
@@ -62,15 +57,14 @@ $(".web-design").mouseout(
 	}
 );
 
+
 $(".web-storage").mouseover(
 	function() {
 		$(".wds-img").removeClass("wds-img").addClass("wdsx-IMG");
 		$(".wds-hd").removeClass("wds-hd").addClass("wdsx-HD");
 		$(".wds-inText").css("display","");
 	}
-);
-
-$(".web-storage").mouseout(
+).mouseout(
 	function() {
 		$(".wdsx-IMG").removeClass("wdsx-IMG").addClass("wds-img");
 		$(".wdsx-HD").removeClass("wdsx-HD").addClass("wds-hd");
@@ -84,9 +78,7 @@ $(".web-security").mouseover(
 		$(".wdse-hd").removeClass("wdse-hd").addClass("wdsxe-HD");
 		$(".wdse-inText").css("display","");
 	}
-);
-
-$(".web-security").mouseout(
+).mouseout(
 	function() {
 		$(".wdsxe-IMG").removeClass("wdsxe-IMG").addClass("wdse-img");
 		$(".wdsxe-HD").removeClass("wdsxe-HD").addClass("wdse-hd");
@@ -94,48 +86,41 @@ $(".web-security").mouseout(
 	}
 );
 
-});
-
-function mediaSize() { 
+ function mediaSize() { 
 if (window.matchMedia('(max-width : 480px)').matches) {
 	$(".web-development").unbind('mouseover mouseout')
 	$(".web-design").unbind('mouseover mouseout')
 	$(".web-storage").unbind('mouseover mouseout')
 	$(".web-security").unbind('mouseover mouseout');
 
+	//------WEB DEVELOPMENT---------//
 	$(".wd-more").click(function(){
-		$(".web-design,.web-storage,.web-security").css({"display": "none","animation":"service-fadeout-in 0.9s"});
-		$(".web-development").css({
-			"width":"47em",
-			"height":"650px",
-			"padding":"0"
-		});
+		$(".wde-inText,.wde-back,.web-storage,.web-security").css({"display": "none","animation":"service-fadeout-in 1s"});
 		$(".wd-more").css({
 			"background-color": "#000",
 			"color": "#fff"
 		});
 		$(".wd-inText").css({
+			"display":"block",
 			"font-size":"32px",
+			"transition":"0.9s",
 			"width":"19em",
-			"padding":"50px 0"
-		});
+			"padding":"75px 0"
+		}).appendTo(".services-two");
 		$(".wd-back").css({
-			"display":"block"
-		});
+			"display":"block",
+			"transition":"0.9s"
+		}).appendTo(".services-two");
 	});
 
 	$(".wd-back").click(function(){
-		$(".web-design,.web-storage,.web-security").css({"display": "block","animation":"service-fadeout-in 9s"});
-		$(".web-development").css({
-			"width":"16.25em",
-			"height":"350px",
-			"padding":"0 55px"
-		});
+		$(".web-storage,.web-security").css({"display": "block","animation":"service-fadeout-in 1s"});
 		$(".wd-more").css({
 			"background-color": "",
 			"color": ""
 		});
 		$(".wd-inText").css({
+			"display":"none",
 			"font-size":"15px",
 			"width":"240px",
 			"padding":""
@@ -147,32 +132,125 @@ if (window.matchMedia('(max-width : 480px)').matches) {
 		});
 	});
 
+	//------WEB DESIGN---------//
+	$(".wde-more").click(function(){
+		$(".wd-inText,.wd-back,.web-storage,.web-security").css({"display": "none","animation":"service-fadeout-in 1s"});
+		$(".wde-more").css({
+			"background-color": "#000",
+			"color": "#fff"
+		});
+		$(".wde-inText").css({
+			"display":"block",
+			"font-size":"32px",
+			"width":"19em",
+			"padding":"75px 0"
+		}).appendTo(".services-two");
+		$(".wde-back").css({
+			"display":"block"
+		}).appendTo(".services-two");
+	});
+
+	$(".wde-back").click(function(){
+		$(".web-storage,.web-security").css({"display": "block","animation":"service-fadeout-in 1s"});
+		$(".wde-more").css({
+			"background-color": "",
+			"color": ""
+		});
+		$(".wde-inText").css({
+			"display":"none",
+			"font-size":"15px",
+			"width":"240px",
+			"padding":""
+		});
+		$(".wde-back").css({
+			"background-color":"#fff",
+			"color":"#000",
+			"display":"none"
+		});
+	});
+
+	//------WEB STORAGE---------//
+	$(".wds-more").click(function(){
+		$(".wdse-inText,.wdse-back,.web-development,.web-design").css({"display": "none","animation":"service-fadeout-in 1s"});
+		$(".wds-more").css({
+			"background-color": "#000",
+			"color": "#fff"
+		});
+		$(".wds-inText").css({
+			"display":"block",
+			"font-size":"32px",
+			"transition":"0.9s",
+			"width":"19em",
+			"padding":"105px 0"
+		}).appendTo(".services");
+		$(".wds-back").css({
+			"display":"block",
+			"transition":"0.9s"
+		}).appendTo(".services");
+	});
+
+	$(".wds-back").click(function(){
+		$(".web-development,.web-design").css({"display": "block","animation":"service-fadeout-in 1s"});
+		$(".wds-more").css({
+			"background-color": "",
+			"color": ""
+		});
+		$(".wds-inText").css({
+			"display":"none",
+			"font-size":"15px",
+			"width":"240px",
+			"padding":""
+		});
+		$(".wds-back").css({
+			"background-color":"#fff",
+			"color":"#000",
+			"display":"none"
+		});
+	});
+
+	//------WEB SECURITY---------//
+	$(".wdse-more").click(function(){
+		$(".wde-inText,.wde-back,.web-development,.web-design").css({"display": "none","animation":"service-fadeout-in 1s"});
+		$(".wdse-more").css({
+			"background-color": "#000",
+			"color": "#fff"
+		});
+		$(".wdse-inText").css({
+			"display":"block",
+			"font-size":"32px",
+			"transition":"0.9s",
+			"width":"19em",
+			"padding":"105px 0"
+		}).appendTo(".services");
+		$(".wdse-back").css({
+			"display":"block",
+			"transition":"0.9s"
+		}).appendTo(".services");
+	});
+
+	$(".wdse-back").click(function(){
+		$(".web-development,.web-design").css({"display": "block","animation":"service-fadeout-in 1s"});
+		$(".wdse-more").css({
+			"background-color": "",
+			"color": ""
+		});
+		$(".wdse-inText").css({
+			"display":"none",
+			"font-size":"15px",
+			"width":"240px",
+			"padding":""
+		});
+		$(".wdse-back").css({
+			"background-color":"#fff",
+			"color":"#000",
+			"display":"none"
+		});
+	});
+
 	}
 }
 window.addEventListener('resize', mediaSize, false);
 });
-var images = ['1.jpg','2.jpg','3.jpg'];
-var i=0;
-function plusSlides() {
-	if (i <= images.length) {
-		i++;
-   document.getElementById('switch').src =  images[i];
-} 
-	if(document.getElementById('switch').getAttribute('src') == "undefined") {
-  		document.getElementById('switch').src = images[images.length-1];
-  		i=2;
-  }
-}
 
-function minusSlides() {
-	if (i <= images.length) {
-		i--;
-   document.getElementById('switch').src =  images[i];
-} 
-	if(document.getElementById('switch').getAttribute('src') == "undefined") {
-  		document.getElementById('switch').src = images[0];
-  		i=0;
-  }
-}
 
-		
+
