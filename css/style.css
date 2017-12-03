@@ -141,6 +141,7 @@ body{
 	background-color: black;
 }
 .welcome-text {
+	display: block;
 	font-weight: bold;
 	pointer-events: none;
 	cursor: pointer;
@@ -149,6 +150,7 @@ body{
 }
 
 .replace-text {
+	display: none;
 	pointer-events: none;
 	cursor: pointer;
 	transition: 0.3s;
@@ -213,8 +215,14 @@ body{
 }
 
 /* services */
-.services {
+.service {
 	width: 72em;
+	margin: 0 auto;
+	height: 300px;
+}
+.services,.services-two {
+	float: left;
+	width: 36em;
 	height: 350px;
 	margin: 0 auto;
 }
