@@ -11,17 +11,17 @@ function closeNav() {
 
 $(".welcome-message").mouseover(
 	function() {
-		$(".welcome-text").replaceWith(
-		'<div class="replace-text">I believe that<br> internet is an ever evolving,'+
-		 'competitive and a very innovative medium for brand awareness.</div>');
+		$(".welcome-text").hide();
+		$(".replace-text").css("display","block");
 		$(".wd").css("display","");
 		$(".wde").css("display","");
 		$(".wds").css("display","");
 		$(".wdse").css("display","");
 	}
-).mouseout(
+).mouseout(	
 	function() {
-		$(".replace-text").replaceWith('<div class="welcome-text">Welcome!<br>to<br>Adpi Creations</div>');
+		$(".welcome-text").show();
+		$(".replace-text").css("display","none");
 		$(".wd").css("display","none");
 		$(".wde").css("display","none");
 		$(".wds").css("display","none");
@@ -88,6 +88,8 @@ $(".web-security").mouseover(
 
  function mediaSize() { 
 if (window.matchMedia('(max-width : 480px)').matches) {
+	
+	$(".main-content").append();
 	$(".web-development").unbind('mouseover mouseout')
 	$(".web-design").unbind('mouseover mouseout')
 	$(".web-storage").unbind('mouseover mouseout')
