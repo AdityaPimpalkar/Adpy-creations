@@ -8,7 +8,6 @@ body{
 
 .nav-icon {
 	float: left;
-	font-size:30px;
 	width: 30px;
 	padding-top: 10px;
 	padding-left: 30px;
@@ -34,30 +33,37 @@ body{
 .closenav {
 	width: 0;
 }
-.nav a {
-	text-align: center;
-    padding: 10px 0px;
-    text-decoration: none;
-    font-size: 25px;
-    display: block;
-    color: #818181;
-    transition: 0.3s;
+
+
+.nav-items {
+	width: 14em;
+	margin: 0 auto;
 }
 
 .nav-list {
-	width: 100%;
+	text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    width: 5em;
+    padding: 10px 0;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    transition: 0.3s;
 }
 
-.nav a:hover {
-    color: #f1f1f1;
+.nav-list:hover {
+    border-left: 4px solid #fff;
 }
 
 .nav .closebtn {
     position: absolute;
     top: 0;
+    color: #818181;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    text-decoration: none;
 }
 
 .wd-flow {
@@ -215,15 +221,25 @@ body{
 }
 
 /* services */
-.service {
+.service-block {
 	width: 72em;
 	margin: 0 auto;
-	height: 300px;
+	height: 320px;
 }
+
+.se-hd {
+	font-size: 26px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-weight: bold;
+	border-bottom: 2px solid #000; 
+	width: 3.5em;
+}
+
 .services,.services-two {
 	float: left;
 	width: 36em;
-	height: 350px;
+	height: 320px;
 	margin: 0 auto;
 }
 .prev, .next {
@@ -252,7 +268,7 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 	padding-top: 10px;
-	padding-bottom: 110px;
+	padding-bottom: 115px;
 	text-align: center;
 	width: 116px;
 	transition: 0.2s;
@@ -326,11 +342,6 @@ body{
 /* Styles */
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-/* Styles */
-}
-
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 /* Styles */
@@ -341,10 +352,6 @@ body{
 /* Styles */
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-}
 /**********
 iPad 3
 **********/
