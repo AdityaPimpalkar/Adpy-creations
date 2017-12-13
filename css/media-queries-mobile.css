@@ -2,6 +2,59 @@
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .nav-icon {
 	font-size: 45px;
+	padding-top: 20px;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.openav {
+	width: 250px;
+}
+
+.closenav {
+	width: 0;
+}
+
+.nav-items {
+	width: 14em;
+	margin: 0 auto;
+}
+
+.nav-list {
+	text-align: center;
+    text-decoration: none;
+    font-size: 42px;
+    width: 5em;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.nav-list:hover {
+    border-left: 4 px solid #fff;
+}
+
+.nav .closebtn {
+    position: absolute;
+    top: 0;
+    color: #818181;
+    right: 25px;
+    font-size: 43px;
+    margin-left: 50px;
+    text-decoration: none;
 }
 
 .main-content{
@@ -36,12 +89,21 @@
 	margin: 0 auto;
 	font-size: 32px;
 	padding: 20px 0;
-	width: 20em;
+	width: 18em;
 }
 
-.service {
+.service-block {
 	width: 47em;
 	height: 720px;
+}
+
+.se-hd {
+	font-size: 40px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-weight: bold;
+	border-bottom: 3px solid #000; 
+	width: 3.5em;
 }
 
 .services,.services-two {
