@@ -2,7 +2,7 @@
  	if (window.matchMedia('(min-width : 480px)').matches) {
     $(".nav").css("width","250px");
 }else {
-	 $(".nav").css("width","400px");
+	 $(".nav").css("width","300px");
 }
 }
 
