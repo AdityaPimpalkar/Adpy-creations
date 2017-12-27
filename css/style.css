@@ -129,7 +129,6 @@ body{
 }
 
 .welcome-message {
-	cursor: pointer;
 	text-align: center;
 	margin: 0 auto;
 	padding: 100px 100px;
@@ -150,7 +149,6 @@ body{
 	display: block;
 	font-weight: bold;
 	pointer-events: none;
-	cursor: pointer;
 	transition: 0.3s;
 	padding-top: 25px;
 }
@@ -158,7 +156,6 @@ body{
 .replace-text {
 	display: none;
 	pointer-events: none;
-	cursor: pointer;
 	transition: 0.3s;
 	font-size: 21px; 
 }
@@ -227,13 +224,16 @@ body{
 	height: 320px;
 }
 
-.se-hd {
+.se-hd,.wk-hd {
 	font-size: 26px;
 	margin: 0 auto;
 	padding: 0 10px;
 	font-weight: bold;
 	border-bottom: 2px solid #000; 
 	width: 3.5em;
+}
+.wk-hd {
+	width: 2.2em;
 }
 
 .services,.services-two {
@@ -247,7 +247,6 @@ body{
 }
 .web-development,.web-design,.web-storage,.web-security {
 	display: inline-block;
-	cursor: pointer;
 	overflow: hidden;
 	z-index: 10;
 	position: relative;
@@ -335,6 +334,76 @@ body{
 @keyframes wdh-uplift {
   0%   { padding-top:10px;padding-bottom: 30px;}
   100% { padding-top:30px;padding-bottom: 30px;}
+}
+
+.work-block {
+	height: 400px;
+	width: 75em;
+	margin: 60px auto;
+	border: 3px solid #000;
+}
+
+.business-understanding,.creativity {
+	width: 630px;
+	height: 200px; 
+	float: left;
+	border: 3px solid #000;
+	border-top: 0; 
+}
+
+.creativity { 
+	border-bottom: 0; 
+}
+
+.biu-head,.cr-head {
+	font-size: 26px;
+	width: 190px;
+	padding: 55px 0;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.cr-head {
+padding: 65px 0;
+}
+
+.bu-expand,.ro-expand,.cr-expand,.sci-expand {
+	display: none;
+}
+
+.robust-coding {
+	height: 400px;
+	float: left;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+	width: 280px;
+}
+
+.social-integration {
+	height: 400px;
+	font-size: 26px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.roc-head {
+	float: left;
+	padding: 165px 0 165px 40px;
+	width: 120px;
+}
+
+.roc-img {
+	float: left;
+	width: 70px;
+}
+
+.sci-head {
+	position: absolute;
+	right: 71;
+	width: 150px;
+	padding: 161px 69px;
 }
 
 /* Smartphones (landscape) ----------- */
