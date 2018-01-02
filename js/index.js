@@ -115,6 +115,32 @@ $(".web-security").mouseenter(
 	}
 );
 
+
+$(".robust-coding").mouseenter(
+	function() {
+		if (window.matchMedia('(min-width : 480px)').matches) {
+		$(".roc-img").css({"display":"block"});
+		$(".roc-head").removeClass("roc-head").addClass("roc-hover");
+		}
+	}
+).mouseleave(
+	function() {
+		if (window.matchMedia('(min-width : 480px)').matches) {
+		$(".robust-coding").css({"border-right":"none"});
+		$(".roc-img").css({"display":"none"});
+		$(".roc-hover").removeClass("roc-hover").addClass("roc-head");
+		}
+	}
+);
+
+$(".roc-img").click(
+	function() {
+		$(".robust-coding").unbind("mouseenter mouseleave").css({"background-color":"#000","color":"#fff"});
+		$(".roc-head").removeClass("roc-head").addClass("roc-hover");
+		$(".ro-more").toggle("slide");
+	}
+);
+
 });
 
 
