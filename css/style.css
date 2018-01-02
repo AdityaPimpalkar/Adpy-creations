@@ -345,7 +345,8 @@ body{
 
 .business-understanding,.creativity {
 	width: 630px;
-	height: 200px; 
+	height: 200px;
+	display: none; 
 	float: left;
 	border: 3px solid #000;
 	border-top: 0; 
@@ -368,8 +369,26 @@ body{
 padding: 65px 0;
 }
 
-.bu-expand,.ro-expand,.cr-expand,.sci-expand {
+.bu-expand,.cr-expand,.sci-expand {
 	display: none;
+}
+
+.ro-more {
+	background-color: #000;
+	color:#fff;
+	width: 920px;
+	float: left;
+	height: 400px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 22px;
+}
+
+.more-roc-expand {
+	width: 30em;
+	margin: 80px 0;
+	padding: 50px 100px;
+	border-left: 2px solid #fff; 
 }
 
 .robust-coding {
@@ -381,29 +400,53 @@ padding: 65px 0;
 	width: 280px;
 }
 
+.robust-coding:hover {
+	transition: 0.5s fade-in;
+	background-color: #000;
+	color:#fff;
+	
+}
+
 .social-integration {
 	height: 400px;
 	font-size: 26px;
+	display: none;
 	font-weight: bold;
 	text-align: center;
 }
 
 .roc-head {
 	float: left;
-	padding: 165px 0 165px 40px;
+	margin: 40px 0;
+	padding: 130px 80px;  
 	width: 120px;
 }
 
 .roc-img {
+	display: none;
 	float: left;
-	width: 70px;
+	width: 66px;
+	padding: 170px 0;
+}
+
+.roc-hover {
+	float: left;
+	padding-right: 0;
+	margin: 40px 0;
+	cursor:pointer;
+	background-color: #000;
+	color:#fff;
+	transition:0.2s;
+	padding: 130px 0;
+	padding-left: 60px;
+	width: 120px;
 }
 
 .sci-head {
 	position: absolute;
 	right: 71;
 	width: 150px;
-	padding: 161px 69px;
+	padding: 167px 69px;
 }
 
 /* Smartphones (landscape) ----------- */
