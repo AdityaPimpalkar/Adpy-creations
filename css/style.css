@@ -20,7 +20,7 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -45,7 +45,7 @@ body{
     text-decoration: none;
     font-size: 25px;
     width: 5em;
-    padding: 10px 0;
+    padding: 15px 0;
     margin: 0 auto;
     display: block;
     color: #fff;
@@ -230,10 +230,10 @@ body{
 	padding: 0 10px;
 	font-weight: bold;
 	border-bottom: 2px solid #000; 
-	width: 3.5em;
+	width: 4em;
 }
 .wk-hd {
-	width: 2.2em;
+	width: 2.5em;
 }
 
 .services,.services-two {
@@ -340,33 +340,52 @@ body{
 	height: 400px;
 	width: 75em;
 	margin: 60px auto;
+	
+}
+
+.business-understanding:hover,.creativity:hover,.robust-coding:hover,.social-integration:hover {
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+
+}
+
+.business-understanding {
+	width: 330px;
+	height: 330px;
+	left: 350px;
+	margin-top: 50px;
+	border-radius: 50%;
+	position: absolute;
 	border: 3px solid #000;
 }
 
-.business-understanding,.creativity {
-	width: 630px;
-	height: 200px;
-	display: none; 
-	float: left;
-	border: 3px solid #000;
-	border-top: 0; 
-}
-
-.creativity { 
-	border-bottom: 0; 
-}
-
-.biu-head,.cr-head {
+.biu-head {
 	font-size: 26px;
 	width: 190px;
-	padding: 55px 0;
+	padding: 130px 0;
 	text-align: center;
 	margin: 0 auto;
 	font-weight: bold;
 }
 
+.creativity {
+	width: 230px;
+	height: 230px;
+	left: 680px;
+	position: absolute;
+	border-radius: 50%;
+	border: 3px solid #000;
+}
+
+
 .cr-head {
-padding: 65px 0;
+	font-size: 26px;
+	width: 190px;
+	padding: 95px 0;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: bold;
 }
 
 .bu-expand,.cr-expand,.sci-expand {
@@ -374,57 +393,69 @@ padding: 65px 0;
 }
 
 .ro-more {
-	background-color: #000;
-	color:#fff;
-	width: 920px;
 	float: left;
+	width: 954px;
 	height: 400px;
-	font-weight: bold;
-	text-align: center;
-	font-size: 22px;
 }
 
-.more-roc-expand {
-	width: 30em;
-	margin: 80px 0;
-	padding: 50px 100px;
-	border-left: 2px solid #fff; 
+.more-roc {
+	padding: 10px 60px;
+	width: 33em;
+	border-left: 3px solid #fff;
+	margin: 125px 0;
+	font-size: 24px;
 }
 
-.robust-coding {
-	height: 400px;
-	float: left;
+.robust-coding{
+	height: 260px;
+	position: absolute;
 	font-size: 26px;
+	border: 3px solid #000;
+	border-radius: 50%;
 	font-weight: bold;
 	text-align: center;
-	width: 280px;
-}
-
-.robust-coding:hover {
-	transition: 0.5s fade-in;
-	background-color: #000;
-	color:#fff;
-	
+	width: 260px;
 }
 
 .social-integration {
-	height: 400px;
+	height: 340px;
+	width: 340px;
+	left: 930px;
+	position: absolute;
+	border: 3px solid #000;
+	border-radius: 50%;
 	font-size: 26px;
-	display: none;
 	font-weight: bold;
 	text-align: center;
 }
 
 .roc-head {
-	float: left;
-	margin: 40px 0;
-	padding: 130px 80px;  
+	margin: 0 auto;
+	padding: 95px 0;  
 	width: 120px;
 }
 
-.roc-img {
-	display: none;
+.roc-img-fwd {
+	display: block;
 	float: left;
+	cursor: pointer;
+	width: 66px;
+	padding: 170px 0;
+}
+
+@-webkit-keyframes roc-expand {
+	0% {width: 260px; border-top-right-radius: 5px;}
+	100% {width: 1200px; border-top-right-radius: 0px;}
+}
+@keyframes roc-expand {
+	0% {width: 260px; border-top-right-radius: 5px;}
+	100% {width: 1200px; border-top-right-radius: 0px;}
+}
+
+.roc-img-back {
+	display: block;
+	float: left;
+	cursor: pointer;
 	width: 66px;
 	padding: 170px 0;
 }
@@ -434,8 +465,6 @@ padding: 65px 0;
 	padding-right: 0;
 	margin: 40px 0;
 	cursor:pointer;
-	background-color: #000;
-	color:#fff;
 	transition:0.2s;
 	padding: 130px 0;
 	padding-left: 60px;
@@ -443,10 +472,9 @@ padding: 65px 0;
 }
 
 .sci-head {
-	position: absolute;
-	right: 71;
 	width: 150px;
-	padding: 167px 69px;
+	margin: 0 auto;
+	padding: 135px 0;
 }
 
 /* Smartphones (landscape) ----------- */
