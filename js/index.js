@@ -115,8 +115,42 @@ $(".web-security").mouseenter(
 	}
 );
 
-$(".robust-coding")
+$(".business-understanding").hover(
+	function() {
+		$(".biu-head").css({"padding":"135px 0"});
+	},function() {
+		$(".biu-head").css({"padding":"95px 0"});
+	}
+);
 
+$(".robust-coding").hover(
+	function() {
+		$(".roc-head").css({"padding":"135px 0"});
+	},function() {
+		$(".roc-head").css({"padding":"95px 0"});
+	}
+);
+
+$(".creativity").hover(
+	function() {
+		$(".cr-head").css({"padding":"150px 0"});
+	},function() {
+		$(".cr-head").css({"padding":"95px 0"});
+	}
+);
+
+$(".social-integration").hover(
+	function() {
+		$(".sci-head").css({"padding":"135px 0"});
+	},function() {
+		$(".sci-head").css({"padding":"95px 0"});
+	}
+);
+
+$(".business-understanding").click(
+	function() {
+		$(".business-understanding").css({"background-color":"#fff","color":"#000"});
+	});
 
 $(".ro-more").hide();
 $(".roc-img-fwd").hide();
