@@ -115,13 +115,11 @@ $(".web-security").mouseenter(
 	}
 );
 
-$(".business-understanding").hover(
-	function() {
+function handlerInout() {
 		$(".biu-head").css({"padding":"135px 0"});
-	},function() {
-		$(".biu-head").css({"padding":"95px 0"});
-	}
-);
+}
+
+$(".business-understanding").hover(handlerInout);
 
 $(".robust-coding").hover(
 	function() {
@@ -147,14 +145,25 @@ $(".social-integration").hover(
 	}
 );
 
-$(".business-understanding").click(
-	function() {
+$(".business-understanding").on("click", function abc () {
+		$(".robust-coding,.creativity,.social-integration").css("display","none");
+		$(".business-understanding").css({"background-color":"#000","color":"#fff","animation":"biu-content-animate 0.5s forwards"}).off("mouseenter mouseleave");
+		$(".biu-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+		$(".more-biu-content").show().css({"background-color":"#000","color":"#fff"});
+		$(".biu-back").show();
+});
+
+$(".biu-back").on("click", ac);
+	function ac(event) {
 		$(".business-understanding").css({"background-color":"#fff","color":"#000"});
-	});
+		
+	}
+
 
 $(".ro-more").hide();
+$(".more-biu-content").hide();
 $(".roc-img-fwd").hide();
-$(".roc-img-back").hide();
+$(".biu-back").hide();
 
 });
 
