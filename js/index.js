@@ -115,11 +115,31 @@ $(".web-security").mouseenter(
 	}
 );
 
-function handlerInout() {
-		$(".biu-head").css({"padding":"135px 0"});
+function handlerIn() {
+	$(".business-understanding").css({
+		"animation":"biu-animate 0.5s forwards",
+		"background-color":" #000",
+		"color": "#fff",
+		"opacity":"0.7",
+		"cursor": "pointer"
+	});
+		$(".biu-head").css({
+			"padding":"125px 0",
+	});
+}
+function handlerOut() {
+	$(".business-understanding").css({
+		"animation":"biu-norm 0.5s forwards",
+		"background-color":"#000",
+		"opacity":"0.7",
+		"color": "#fff"
+	});
+		$(".biu-head").css({
+			"padding":"95px 0"
+		});
 }
 
-$(".business-understanding").hover(handlerInout);
+$(".business-understanding").hover(handlerIn,handlerOut);
 
 $(".robust-coding").hover(
 	function() {
@@ -129,41 +149,162 @@ $(".robust-coding").hover(
 	}
 );
 
-$(".creativity").hover(
-	function() {
-		$(".cr-head").css({"padding":"150px 0"});
-	},function() {
-		$(".cr-head").css({"padding":"95px 0"});
-	}
-);
+function mouseIn() {
+		$(".creativity").css({
+		"animation":"cr-animate 0.5s forwards",
+		"cursor": "pointer"
+	});
+		$(".cr-head").css({"padding":"130px 0"});
+}
 
-$(".social-integration").hover(
-	function() {
-		$(".sci-head").css({"padding":"135px 0"});
-	},function() {
+function mouseOut() {
+		$(".creativity").css({
+		"animation":"cr-norm 0.5s forwards",
+	});
+		$(".cr-head").css({"padding":"110px 0"});
+}
+
+$(".creativity").hover(mouseIn,mouseOut);
+
+function hoverIn() {
+	$(".robust-coding").css({
+		"animation":"roc-animate 0.5s forwards",
+		"background-color":"#000",
+		"opacity":"0.7",
+		"cursor": "pointer"
+	});
+		$(".roc-head").css({"padding":"115px 0"});
+}
+function hoverOut() {
+		$(".robust-coding").css({
+		"animation":"roc-norm 0.5s forwards",
+		"background-color":"#000",
+		"opacity":"0.7"
+	});
+		$(".roc-head").css({"padding":"95px 0"});
+}
+
+$(".robust-coding").hover(hoverIn,hoverOut);
+
+function entityIn() {
+	$(".social-integration").css({
+		"animation":"sci-animate 0.3s forwards",
+		"background-color":" #000",
+		"color": "#fff",
+		"opacity":"0.7",
+		"cursor": "pointer"
+	});
+		$(".sci-head").css({"padding":"120px 0"});
+}
+function entityOut() {
+		$(".social-integration").css({
+		"animation":"sci-norm 0.3s forwards",
+		"background-color":"#000",
+		"opacity":"0.7",
+		"color": "#fff"
+	});
 		$(".sci-head").css({"padding":"95px 0"});
-	}
-);
+}
 
-$(".business-understanding").on("click", function abc () {
-		$(".robust-coding,.creativity,.social-integration").css("display","none");
-		$(".business-understanding").css({"background-color":"#000","color":"#fff","animation":"biu-content-animate 0.5s forwards"}).off("mouseenter mouseleave");
-		$(".biu-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
-		$(".more-biu-content").show().css({"background-color":"#000","color":"#fff"});
-		$(".biu-back").show();
+$(".social-integration").hover(entityIn,entityOut);
+
+function BuiContentEx(e) {
+	e.stopPropagation();
+	$(this).css({"background-color":"#000","color":"#fff","animation":"bui-content-animate .5s forwards"}).off("mouseenter mouseleave");
+	$(this).off("click");
+	$(".robust-coding,.creativity,.social-integration").css("display","none");
+	$(".biu-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".more-biu-content").show().css({"background-color":"#000","color":"#fff"});
+	$(".biu-back").show();
+}
+
+$(".business-understanding").on("click", BuiContentEx);
+
+$(".biu-back").on("click",function BuiContentNrm(e) {
+	e.stopPropagation();
+	$(this).hide();
+	$(".robust-coding,.creativity,.social-integration").css("display","block");
+	$(".more-biu-content").hide();
+	$(".biu-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".business-understanding").css({"background-color":"#000","color":"#fff","animation":"bui-content-norm .5s forwards"})
+	.on("mouseenter",handlerIn).on("mouseleave",handlerOut).on("click", BuiContentEx);
 });
 
-$(".biu-back").on("click", ac);
-	function ac(event) {
-		$(".business-understanding").css({"background-color":"#fff","color":"#000"});
-		
-	}
 
+function CrContentEx(e) {
+	e.stopPropagation();
+	$(this).css({"background-color":"#000","color":"#fff","animation":"cr-content-animate .5s forwards"}).off("mouseenter mouseleave");
+	$(this).off("click");
+	$(".robust-coding,.business-understanding,.social-integration").css("display","none");
+	$(".cr-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".more-cr-content").show().css({"background-color":"#000","color":"#fff"});
+	$(".cr-back").show();
+}
 
-$(".ro-more").hide();
+$(".creativity").on("click", CrContentEx);
+
+$(".cr-back").on("click",function CrContentNrm(e) {
+	e.stopPropagation();
+	$(this).hide();
+	$(".robust-coding,.business-understanding,.social-integration").css("display","block");
+	$(".more-cr-content").hide();
+	$(".cr-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".creativity").css({"background-color":"#000","color":"#fff","animation":"cr-content-norm .5s forwards"})
+	.on("mouseenter",mouseIn).on("mouseleave",mouseOut).on("click", CrContentEx);
+});
+
+function RocContentEx(e) {
+	e.stopPropagation();
+	$(this).css({"background-color":"#000","color":"#fff","animation":"roc-content-animate .5s forwards"}).off("mouseenter mouseleave");
+	$(this).off("click");
+	$(".creativity,.business-understanding,.social-integration").css("display","none");
+	$(".roc-head").css({"padding":"30px 0 10px 0","color":"#fff","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".more-roc-content").show().css({"background-color":"#000","color":"#fff"});
+	$(".roc-back").show();
+}
+
+$(".robust-coding").on("click", RocContentEx);
+
+$(".roc-back").on("click",function RocContentNrm(e) {
+	e.stopPropagation();
+	$(this).hide();
+	$(".creativity,.business-understanding,.social-integration").css("display","block");
+	$(".more-roc-content").hide();
+	$(".roc-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".robust-coding").css({"background-color":"#000","color":"#fff","animation":"roc-content-norm .5s forwards"})
+	.on("mouseenter",hoverIn).on("mouseleave",hoverOut).on("click", RocContentEx);
+});
+
+function SciContentEx(e) {
+	e.stopPropagation();
+	$(this).css({"background-color":"#000","color":"#fff","animation":"sci-content-animate .5s forwards"}).off("mouseenter mouseleave");
+	$(this).off("click");
+	$(".creativity,.business-understanding,.robust-coding").css("display","none");
+	$(".sci-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".more-sci-content").show().css({"background-color":"#000","color":"#fff"});
+	$(".sci-back").show();
+}
+
+$(".social-integration").on("click", SciContentEx);
+
+$(".sci-back").on("click",function SciContentNrm(e) {
+	e.stopPropagation();
+	$(this).hide();
+	$(".creativity,.business-understanding,.robust-coding").css("display","block");
+	$(".more-sci-content").hide();
+	$(".sci-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".social-integration").css({"background-color":"#000","color":"#fff","animation":"sci-content-norm .5s forwards"})
+	.on("mouseenter",entityIn).on("mouseleave",entityOut).on("click", SciContentEx);
+});
+
+$(".more-cr-content").hide();
 $(".more-biu-content").hide();
-$(".roc-img-fwd").hide();
+$(".more-roc-content").hide();
+$(".more-sci-content").hide();
 $(".biu-back").hide();
+$(".cr-back").hide();
+$(".roc-back").hide();
+$(".sci-back").hide();
 
 });
 
