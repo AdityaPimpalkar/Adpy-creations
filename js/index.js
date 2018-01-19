@@ -141,14 +141,6 @@ function handlerOut() {
 
 $(".business-understanding").hover(handlerIn,handlerOut);
 
-$(".robust-coding").hover(
-	function() {
-		$(".roc-head").css({"padding":"135px 0"});
-	},function() {
-		$(".roc-head").css({"padding":"95px 0"});
-	}
-);
-
 function mouseIn() {
 		$(".creativity").css({
 		"animation":"cr-animate 0.5s forwards",
