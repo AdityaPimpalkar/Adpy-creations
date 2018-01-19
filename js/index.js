@@ -124,7 +124,7 @@ function handlerIn() {
 		"cursor": "pointer"
 	});
 		$(".biu-head").css({
-			"padding":"125px 0",
+			"padding":"35px 0",
 	});
 }
 function handlerOut() {
@@ -135,7 +135,7 @@ function handlerOut() {
 		"color": "#fff"
 	});
 		$(".biu-head").css({
-			"padding":"95px 0"
+			"padding":"25px 0"
 		});
 }
 
@@ -154,14 +154,14 @@ function mouseIn() {
 		"animation":"cr-animate 0.5s forwards",
 		"cursor": "pointer"
 	});
-		$(".cr-head").css({"padding":"130px 0"});
+		$(".cr-head").css({"padding":"50px 0"});
 }
 
 function mouseOut() {
 		$(".creativity").css({
 		"animation":"cr-norm 0.5s forwards",
 	});
-		$(".cr-head").css({"padding":"110px 0"});
+		$(".cr-head").css({"padding":"45px 0"});
 }
 
 $(".creativity").hover(mouseIn,mouseOut);
@@ -173,7 +173,7 @@ function hoverIn() {
 		"opacity":"0.7",
 		"cursor": "pointer"
 	});
-		$(".roc-head").css({"padding":"115px 0"});
+		$(".roc-head").css({"padding":"40px 0"});
 }
 function hoverOut() {
 		$(".robust-coding").css({
@@ -181,7 +181,7 @@ function hoverOut() {
 		"background-color":"#000",
 		"opacity":"0.7"
 	});
-		$(".roc-head").css({"padding":"95px 0"});
+		$(".roc-head").css({"padding":"25px 0"});
 }
 
 $(".robust-coding").hover(hoverIn,hoverOut);
@@ -194,7 +194,7 @@ function entityIn() {
 		"opacity":"0.7",
 		"cursor": "pointer"
 	});
-		$(".sci-head").css({"padding":"120px 0"});
+		$(".sci-head").css({"padding":"35px 0"});
 }
 function entityOut() {
 		$(".social-integration").css({
@@ -203,7 +203,7 @@ function entityOut() {
 		"opacity":"0.7",
 		"color": "#fff"
 	});
-		$(".sci-head").css({"padding":"95px 0"});
+		$(".sci-head").css({"padding":"25px 0"});
 }
 
 $(".social-integration").hover(entityIn,entityOut);
@@ -213,7 +213,7 @@ function BuiContentEx(e) {
 	$(this).css({"background-color":"#000","color":"#fff","animation":"bui-content-animate .5s forwards"}).off("mouseenter mouseleave");
 	$(this).off("click");
 	$(".robust-coding,.creativity,.social-integration").css("display","none");
-	$(".biu-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".biu-head").css({"padding":"20px 0","border-bottom":"2px solid #fff","font-size":"23px"});
 	$(".more-biu-content").show().css({"background-color":"#000","color":"#fff"});
 	$(".biu-back").show();
 }
@@ -225,7 +225,7 @@ $(".biu-back").on("click",function BuiContentNrm(e) {
 	$(this).hide();
 	$(".robust-coding,.creativity,.social-integration").css("display","block");
 	$(".more-biu-content").hide();
-	$(".biu-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".biu-head").css({"padding":"25px 0","border-bottom":"none","font-size":"26px"});
 	$(".business-understanding").css({"background-color":"#000","color":"#fff","animation":"bui-content-norm .5s forwards"})
 	.on("mouseenter",handlerIn).on("mouseleave",handlerOut).on("click", BuiContentEx);
 });
@@ -236,7 +236,7 @@ function CrContentEx(e) {
 	$(this).css({"background-color":"#000","color":"#fff","animation":"cr-content-animate .5s forwards"}).off("mouseenter mouseleave");
 	$(this).off("click");
 	$(".robust-coding,.business-understanding,.social-integration").css("display","none");
-	$(".cr-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".cr-head").css({"padding":"30px 0","border-bottom":"2px solid #fff","font-size":"23px"});
 	$(".more-cr-content").show().css({"background-color":"#000","color":"#fff"});
 	$(".cr-back").show();
 }
@@ -248,7 +248,7 @@ $(".cr-back").on("click",function CrContentNrm(e) {
 	$(this).hide();
 	$(".robust-coding,.business-understanding,.social-integration").css("display","block");
 	$(".more-cr-content").hide();
-	$(".cr-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".cr-head").css({"padding":"45px 0","border-bottom":"none","font-size":"26px"});
 	$(".creativity").css({"background-color":"#000","color":"#fff","animation":"cr-content-norm .5s forwards"})
 	.on("mouseenter",mouseIn).on("mouseleave",mouseOut).on("click", CrContentEx);
 });
@@ -258,7 +258,7 @@ function RocContentEx(e) {
 	$(this).css({"background-color":"#000","color":"#fff","animation":"roc-content-animate .5s forwards"}).off("mouseenter mouseleave");
 	$(this).off("click");
 	$(".creativity,.business-understanding,.social-integration").css("display","none");
-	$(".roc-head").css({"padding":"30px 0 10px 0","color":"#fff","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".roc-head").css({"padding":"10px 0","color":"#fff","border-bottom":"2px solid #fff","font-size":"23px"});
 	$(".more-roc-content").show().css({"background-color":"#000","color":"#fff"});
 	$(".roc-back").show();
 }
@@ -270,7 +270,7 @@ $(".roc-back").on("click",function RocContentNrm(e) {
 	$(this).hide();
 	$(".creativity,.business-understanding,.social-integration").css("display","block");
 	$(".more-roc-content").hide();
-	$(".roc-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".roc-head").css({"padding":"35px 0","border-bottom":"none","font-size":"26px"});
 	$(".robust-coding").css({"background-color":"#000","color":"#fff","animation":"roc-content-norm .5s forwards"})
 	.on("mouseenter",hoverIn).on("mouseleave",hoverOut).on("click", RocContentEx);
 });
@@ -280,7 +280,7 @@ function SciContentEx(e) {
 	$(this).css({"background-color":"#000","color":"#fff","animation":"sci-content-animate .5s forwards"}).off("mouseenter mouseleave");
 	$(this).off("click");
 	$(".creativity,.business-understanding,.robust-coding").css("display","none");
-	$(".sci-head").css({"padding":"30px 0 10px 0","border-bottom":"2px solid #fff","font-size":"23px"});
+	$(".sci-head").css({"padding":"20px 0","border-bottom":"2px solid #fff","font-size":"23px"});
 	$(".more-sci-content").show().css({"background-color":"#000","color":"#fff"});
 	$(".sci-back").show();
 }
@@ -292,7 +292,7 @@ $(".sci-back").on("click",function SciContentNrm(e) {
 	$(this).hide();
 	$(".creativity,.business-understanding,.robust-coding").css("display","block");
 	$(".more-sci-content").hide();
-	$(".sci-head").css({"padding":"95px 0","border-bottom":"none","font-size":"26px"});
+	$(".sci-head").css({"padding":"25px 0","border-bottom":"none","font-size":"26px"});
 	$(".social-integration").css({"background-color":"#000","color":"#fff","animation":"sci-content-norm .5s forwards"})
 	.on("mouseenter",entityIn).on("mouseleave",entityOut).on("click", SciContentEx);
 });
