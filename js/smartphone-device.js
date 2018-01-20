@@ -156,7 +156,16 @@ if (window.matchMedia('(max-width : 480px)').matches) {
 		});
 	});
 
+	$(".more-cr-content").show();
+	$(".more-biu-content").show();
+	$(".more-roc-content").show();
+	$(".more-sci-content").show();
+
 	}else {
+		$(".more-cr-content").hide();
+		$(".more-biu-content").hide();
+		$(".more-roc-content").hide();
+		$(".more-sci-content").hide();
 		$(".replace-text").css({"display":"none"});
 		$(".wd-inText").appendTo(".web-development");
 		$(".wde-inText").appendTo(".web-design");
