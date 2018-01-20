@@ -115,6 +115,7 @@ $(".web-security").mouseenter(
 	}
 );
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 function handlerIn() {
 	$(".business-understanding").css({
 		"animation":"biu-animate 0.5s forwards",
@@ -127,6 +128,9 @@ function handlerIn() {
 			"padding":"35px 0",
 	});
 }
+}
+
+if (window.matchMedia('(min-width : 480px)').matches) {
 function handlerOut() {
 	$(".business-understanding").css({
 		"animation":"biu-norm 0.5s forwards",
@@ -138,9 +142,11 @@ function handlerOut() {
 			"padding":"25px 0"
 		});
 }
+}
 
 $(".business-understanding").hover(handlerIn,handlerOut);
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 function mouseIn() {
 		$(".creativity").css({
 		"animation":"cr-animate 0.5s forwards",
@@ -154,6 +160,7 @@ function mouseOut() {
 		"animation":"cr-norm 0.5s forwards",
 	});
 		$(".cr-head").css({"padding":"45px 0"});
+}
 }
 
 $(".creativity").hover(mouseIn,mouseOut);
@@ -210,7 +217,9 @@ function BuiContentEx(e) {
 	$(".biu-back").show();
 }
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 $(".business-understanding").on("click", BuiContentEx);
+}
 
 $(".biu-back").on("click",function BuiContentNrm(e) {
 	e.stopPropagation();
@@ -233,7 +242,9 @@ function CrContentEx(e) {
 	$(".cr-back").show();
 }
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 $(".creativity").on("click", CrContentEx);
+}
 
 $(".cr-back").on("click",function CrContentNrm(e) {
 	e.stopPropagation();
@@ -255,7 +266,9 @@ function RocContentEx(e) {
 	$(".roc-back").show();
 }
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 $(".robust-coding").on("click", RocContentEx);
+}
 
 $(".roc-back").on("click",function RocContentNrm(e) {
 	e.stopPropagation();
@@ -277,7 +290,9 @@ function SciContentEx(e) {
 	$(".sci-back").show();
 }
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 $(".social-integration").on("click", SciContentEx);
+}
 
 $(".sci-back").on("click",function SciContentNrm(e) {
 	e.stopPropagation();
@@ -293,6 +308,7 @@ $(".more-cr-content").hide();
 $(".more-biu-content").hide();
 $(".more-roc-content").hide();
 $(".more-sci-content").hide();
+
 $(".biu-back").hide();
 $(".cr-back").hide();
 $(".roc-back").hide();
