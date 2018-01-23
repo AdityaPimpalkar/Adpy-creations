@@ -165,6 +165,7 @@ function mouseOut() {
 
 $(".creativity").hover(mouseIn,mouseOut);
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 function hoverIn() {
 	$(".robust-coding").css({
 		"animation":"roc-animate 0.5s forwards",
@@ -182,9 +183,11 @@ function hoverOut() {
 	});
 		$(".roc-head").css({"padding":"25px 0"});
 }
+}
 
 $(".robust-coding").hover(hoverIn,hoverOut);
 
+if (window.matchMedia('(min-width : 480px)').matches) {
 function entityIn() {
 	$(".social-integration").css({
 		"animation":"sci-animate 0.3s forwards",
@@ -203,6 +206,7 @@ function entityOut() {
 		"color": "#fff"
 	});
 		$(".sci-head").css({"padding":"25px 0"});
+}
 }
 
 $(".social-integration").hover(entityIn,entityOut);
