@@ -227,25 +227,30 @@ body{
 }
 
 /* services */
+.service-content {
+	background-image: url('cup-of-coffee-1280537_1280-001.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: fixed;
+}
+
 .service-block {
 	width: 72em;
 	margin: 0 auto;
-	height: 370px;
+	height: 430px;
 }
 
 .se-hd,.wk-hd {
 	font-size: 28px;
+	padding: 20px 5px 0 5px;
 	margin: 0 auto;
-	padding: 0 5px;
 	font-weight: bold;
-	border-bottom: 2px solid #000; 
+	color: #fff;
+	border-bottom: 2px solid #fff; 
 	width: 3.5em;
 }
 .wk-hd {
-	position: relative;
-	padding: 30 5px 0 5px; 
-	color: #fff;
-	border-bottom: 2px solid #fff;
+	position: relative; 
 	width: 2.3em;
 }
 
@@ -258,12 +263,15 @@ body{
 .prev, .next {
 	display: none;
 }
+
 .web-development,.web-design,.web-storage,.web-security {
 	display: inline-block;
 	overflow: hidden;
+	background-color: #000;
+	opacity: 0.7;
 	z-index: 10;
 	position: relative;
-	margin: 0 15px; 
+	margin: 10px 15px; 
 	float: left;
 	width: 16em;
 	height: 310px;
@@ -280,7 +288,8 @@ body{
 	font-size: 20px;
 	font-weight: bold;
 	padding-top: 10px;
-	padding-bottom: 115px;
+	color: #fff;
+	padding-bottom: 100px;
 	text-align: center;
 	width: 116px;
 	transition: 0.2s;
@@ -297,7 +306,9 @@ body{
 .wd-inText,.wde-inText,.wds-inText,.wdse-inText {
 	font-size: 15px;
 	transition: 0.2s fade-in;
+	color: #fff;
 	margin: 0 auto;
+	font-weight: bold; 
 	text-align: center;
 	width: 240px;
 }
@@ -308,27 +319,27 @@ body{
 
 /* on hover cards */
 .wdx-IMG,.wdex-IMG,.wdsx-IMG,.wdsxe-IMG {
-	padding: 10px 0;
+	padding: 25px 0;
 	margin: 0 auto;
-	width: 65px;
+	width: 60px;
 	animation: wdx-uplift 0.2s;
 }
 
 /* image lift */
 @-webkit-keyframes wdx-uplift {
   0%   { padding-top:90px;}
-  100% { padding-top:10px;}
+  100% { padding-top:25px;}
 }
 @keyframes wdx-uplift {
   0%   { padding-top:90px;}
-  100% { padding-top:10px;}
+  100% { padding-top:25px;}
 }
 
 .wdh-HD,.wdex-HD,.wdsx-HD,.wdsxe-HD {
 	font-size: 22px;
 	font-weight: bold;
-	padding-top: 20px;
 	padding-bottom: 30px;
+	color: #fff;
 	text-align: center;
 	width: 120px;
 	margin: 0 auto;
@@ -342,11 +353,11 @@ body{
 /* header lift */
 @-webkit-keyframes wdh-uplift {
   0%   { padding-top:10px;padding-bottom: 30px;}
-  100% { padding-top:20px;padding-bottom: 30px;}
+  100% { padding-bottom: 30px;}
 }
 @keyframes wdh-uplift {
   0%   { padding-top:10px;padding-bottom: 30px;}
-  100% { padding-top:20px;padding-bottom: 30px;}
+  100% { padding-bottom: 30px;}
 }
 
 .wkimg {
@@ -357,7 +368,7 @@ body{
 }
 
 .work-content {
-	height: 500px;
+	height: 450px;
 	width: 100%;
 	background-image: url('1-002.jpg');
 	background-repeat: no-repeat;
@@ -831,8 +842,111 @@ iPad 3
 	width: 18em;
 }
 
+
 .service-block {
+	height: 500px;
+	width: 36em;
+}
+
+.services,.services-two {
+	height: 210px;
+	float: none;
+	width: 35em;
+}
+
+.web-development,.web-design,.web-storage,.web-security {
+	height: 180px;
+	width: 16em;
+	margin: 15px 10px; 
+}
+
+.wd-img,.wde-img,.wds-img,.wdse-img  {
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 60px;
+	transition: 0.2s;
+}
+
+.wd-hd,.wde-hd,.wds-hd,.wdse-hd {
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	color: #fff;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 116px;
+	transition: 0.2s;
+	margin: 0 auto;
+}
+
+.wd-more,.wde-more,.wds-more,.wdse-more {
 	display: none;
+}
+
+.wd-back,.wde-back,.wds-back,.wdse-back {
+	display: block;
+	width: 20px;
+	margin: 0 auto;
+}
+
+.wd-inText,.wde-inText,.wds-inText,.wdse-inText {
+	font-size: 15px;
+	transition: 0.2s fade-in;
+	color: #fff;
+	padding: 30px 0;
+	margin: 0 auto;
+	font-weight: bold; 
+	text-align: center;
+	width: 240px;
+}
+
+.wde-hd,.wds-hd,.wdse-hd {
+	width: 100px;
+}
+
+/* on hover cards */
+.wdx-IMG,.wdex-IMG,.wdsx-IMG,.wdsxe-IMG {
+	padding: 0px;
+	margin: 0 auto;
+	position: relative;
+	top: -60px;
+	width: 60px;
+	animation: wdx-uplift 0.2s;
+}
+
+/* image lift */
+@-webkit-keyframes wdx-uplift {
+  0%   { padding:20px;}
+  100% { padding:0px; top: -60px; }
+}
+@keyframes wdx-uplift {
+  0%   { padding:20px;}
+  100% { padding:0px; top: -60px;}
+}
+
+.wdh-HD,.wdex-HD,.wdsx-HD,.wdsxe-HD {
+	font-size: 22px;
+	font-weight: bold;
+	padding-bottom: 30px;
+	color: #fff;
+	text-align: center;
+	width: 120px;
+	margin: 0 auto;
+	animation: wdh-uplift 0.2s;
+}
+
+.wdex-HD,.wdsx-HD,.wdsxe-HD {
+	width: 110px;
+} 
+
+/* header lift */
+@-webkit-keyframes wdh-uplift {
+  0%   {padding-bottom: 30px;}
+  100% {}
+}
+@keyframes wdh-uplift {
+  0%   {padding-bottom: 30px;}
+  100% { }
 }
 
 .work-block {
