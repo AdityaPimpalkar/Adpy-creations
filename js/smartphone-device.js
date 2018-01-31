@@ -166,6 +166,10 @@ if (window.matchMedia('(max-width : 480px)').matches) {
 	$(".more-sci-content").show();
 
 	}else {
+    $(".img-wd").attr("src","images/develop.svg").css("width","60px");
+    $(".img-wde").attr("src","images/design.svg").css("width","60px");
+    $(".img-wds").attr("src","images/storage.svg").css("width","60px");
+    $(".img-wdse").attr("src","images/security.svg").css("width","60px");
 		$(".more-cr-content").hide();
 		$(".more-biu-content").hide();
 		$(".more-roc-content").hide();
@@ -177,7 +181,8 @@ if (window.matchMedia('(max-width : 480px)').matches) {
 		$(".wdse-inText").appendTo(".web-security");
 	}
 
-if (window.matchMedia('(min-width:482px) and (max-width: 770px)').matches) {
+
+if (window.matchMedia('(min-width:480px) and (max-width: 768px)').matches) {
 	$(".replace-text").show();
 	$(".wd-back").hide();
 	$(".wd-fwd").show();
@@ -263,11 +268,16 @@ if (window.matchMedia('(min-width:482px) and (max-width: 770px)').matches) {
 			}
 		);
 
+
 }else{
 	$(".wd-back").hide();
 	$(".wd-fwd").hide();
 	$(".wde-back").hide();
 	$(".wde-fwd").hide();
+  $(".wds-back").hide();
+  $(".wds-fwd").hide();
+  $(".wdse-back").hide();
+	$(".wdse-fwd").hide();
 	$(".roc-fwd").hide();
 	$(".biu-fwd").hide();
 	$(".cr-fwd").hide();
