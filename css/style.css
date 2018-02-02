@@ -76,18 +76,45 @@ body{
      margin-left: 50px;
      text-decoration: none;
 }
+
+.main-content{
+    width: 100%;
+    height: 640px;
+    background-image: url('entrepreneur-593378_1280-001.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: fixed;
+}
+
+.wd-flow-pointer {
+    position: relative;
+    top: 32px;
+    left: 220px;
+    width: 92px;
+    border-bottom: 3px solid #fff;
+}
+
+.wd-flow-pointer {
+  position: relative;
+  top: 32px;
+  left: 220px;
+  width: 92px;
+  border-bottom: 3px solid #fff;
+}
+
  .wd-flow {
-     color: white;
-     background-color: black;
-     font-size: 19px;
-     padding: 10px 32px;
-     margin: 0 auto;
-     transition: 1s fade-in;
-     overflow: hidden;
-     position: absolute;
-     z-index: 10;
+   color: #fff;
+  font-size: 19px;
+  font-weight: bold;
 }
  .wd {
+      width: 180px;
+  top: 110px;
+   left: 30px;
+   transition: 1s fade-in;
+   overflow: hidden;
+   position: absolute;
+   z-index: 10;
      pointer-events: none;
      animation: leftslide 0.3s;
      transition: 1s;
@@ -150,39 +177,49 @@ body{
     }
 }
  .intro-bubble{
+
      position: relative;
      margin: 0 auto;
-     width: 46em;
-     padding-top: 100px;
+     height: 455px;
+     width: 53em;
+     padding: 90px 0;
 }
  .welcome-message {
-     text-align: center;
-     margin: 0 auto;
-     padding: 100px 100px;
-     border-radius: 50%;
-     border: black 3px solid;
-     width: 200px;
-     height: 160px;
+   background-color: #000;
+   opacity: 0.7;
+     height: 455px;
      transition: 0.3s;
-     font-size: 27px;
      z-index: 1;
 }
- .welcome-message:hover {
-     color: white;
-     background-color: black;
-}
- .welcome-text {
+
+ .title-head {
+     float: left;
+     color: #fff;
+     position: relative;
+     top:145px;
+     font-size: 55px;
+     left: 160px;
+     width: 240px;
+     text-align: right;
      display: block;
      font-weight: bold;
      pointer-events: none;
      transition: 0.3s;
-     padding-top: 25px;
 }
- .replace-text {
-     display: none;
-     pointer-events: none;
-     transition: 0.3s;
-     font-size: 21px;
+ .content-desc {
+
+float: left;
+left: 180px;
+color: #fff;
+top: 135px;
+border-left: 3px solid #fff;
+width: 13em;
+padding: 30px 0 30px 20px;
+position: relative;
+pointer-events: none;
+transition: 0.3s;
+font-size: 22px;
+font-weight: bold;
 }
  .wds-flow {
      top: 400px;
@@ -298,7 +335,6 @@ body{
      overflow: hidden;
      background-color: #000;
      opacity: 0.7;
-     z-index: 10;
      position: relative;
      margin: 10px 15px;
      float: left;
@@ -1012,10 +1048,6 @@ body{
      padding-left: 350px;
 }
 */
- .main-content{
-     width: 100%;
-     height: 550px;
-}
 /* #containerText0{
      color: black;
      font-family: sans-serif;
