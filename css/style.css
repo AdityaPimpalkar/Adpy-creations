@@ -90,35 +90,105 @@ body{
     position: relative;
     top: 32px;
     left: 220px;
-    width: 92px;
+    width: 94px;
     border-bottom: 3px solid #fff;
 }
 
-.wd-flow-pointer {
+.wde-flow-pointer {
   position: relative;
-  top: 32px;
-  left: 220px;
-  width: 92px;
+  top: 27px;
+  left: 533px;
+  width: 94px;
   border-bottom: 3px solid #fff;
 }
 
- .wd-flow {
+.wds-flow-pointer {
+  position: relative;
+  top: 395px;
+  left: 221px;
+  width: 94px;
+  border-bottom: 3px solid #fff;
+}
+
+.wdse-flow-pointer {
+  position: relative;
+  top: 398px;
+  left: 421px;
+  width: 94px;
+  border-bottom: 3px solid #fff;
+}
+
+.wdm-pointer,.wdem-pointer,.wdsm-pointer {
+  position: relative;
+  width: 122px;
+  border-bottom: 3px solid #fff;
+}
+
+.wdm-pointer {
+    top: 75px;
+    left: 291px;
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.wdem-pointer {
+  top: 70px;
+  left: 433px;
+  -ms-transform: rotate(130deg);
+  -webkit-transform: rotate(130deg);
+  transform: rotate(130deg);
+}
+
+.wdsm-pointer {
+  top: 346px;
+  left: 292px;
+  -ms-transform: rotate(130deg);
+  -webkit-transform: rotate(130deg);
+  transform: rotate(130deg);
+}
+
+
+
+ .wd-flow,.wde-flow,.wds-flow,.wdse-flow {
    color: #fff;
   font-size: 19px;
   font-weight: bold;
 }
- .wd {
-      width: 180px;
-  top: 110px;
-   left: 30px;
+ .wd,.wde,.wds,.wdse {
+      text-align: center;
    transition: 1s fade-in;
    overflow: hidden;
    position: absolute;
    z-index: 10;
      pointer-events: none;
      animation: leftslide 0.3s;
-     transition: 1s;
 }
+
+.wd {
+  top: 110px;
+   left: 102px;
+   width: 140px;
+}
+
+.wde {
+  width: 80px;
+  top: 110px;
+  left: 625px;
+}
+
+.wds {
+  width: 80px;
+  top:473px;
+  left: 135px;
+}
+
+.wdse {
+  width: 80px;
+  top:389px;
+  left: 521px;
+}
+
  @-webkit-keyframes leftslide {
      0% {
          opacity: 0;
@@ -139,23 +209,7 @@ body{
         padding-left:0px;
     }
 }
- .wde-flow {
-     color: white;
-     background-color: black;
-     font-size: 19px;
-     padding: 10px 62px;
-     margin: 0 auto;
-     transition: 1s fade-in;
-     overflow: hidden;
-     position: absolute;
-     z-index: 10;
-}
- .wde {
-     pointer-events: none;
-     padding-left:481px;
-     animation: rightslide 0.3s;
-     transition: 1s;
-}
+
  @-webkit-keyframes rightslide {
      0% {
          opacity: 0;
@@ -196,7 +250,7 @@ body{
      float: left;
      color: #fff;
      position: relative;
-     top:145px;
+     top:125px;
      font-size: 55px;
      left: 160px;
      width: 240px;
@@ -211,7 +265,7 @@ body{
 float: left;
 left: 180px;
 color: #fff;
-top: 135px;
+top: 115px;
 border-left: 3px solid #fff;
 width: 13em;
 padding: 30px 0 30px 20px;
@@ -221,81 +275,8 @@ transition: 0.3s;
 font-size: 22px;
 font-weight: bold;
 }
- .wds-flow {
-     top: 400px;
-     color: white;
-     background-color: black;
-     font-size: 19px;
-     padding: 10px 52px;
-     margin: 0 auto;
-     transition: 1s fade-in;
-     overflow: hidden;
-     position: absolute;
-     z-index: 10;
-}
- .wds {
-     pointer-events: none;
-     animation: leftslide 0.3s;
-     transition: 1s;
-}
- @-webkit-keyframes leftslide {
-     0% {
-         opacity: 0;
-        padding-left:164px;
-    }
-     100% {
-         opacity: 1;
-        padding-left:0px;
-    }
-}
- @keyframes leftslide {
-     0% {
-         opacity: 0;
-        padding-left:84px;
-    }
-     100% {
-         opacity: 1;
-        padding-left:0px;
-    }
-}
- .wdse-flow {
-     top: 400px;
-     color: white;
-     background-color: black;
-     font-size: 19px;
-     padding: 10px 47px;
-     margin: 0 auto;
-     transition: 1s fade-in;
-     overflow: hidden;
-     position: absolute;
-     z-index: 10;
-}
- .wdse {
-     pointer-events: none;
-     padding-left:481px;
-     animation: rightslide 0.3s;
-     transition: 1s;
-}
- @-webkit-keyframes rightslide {
-     0% {
-         opacity: 0;
-        padding-left:380px;
-    }
-     100% {
-         opacity: 1;
-        padding-left:481px;
-    }
-}
- @keyframes rightslide {
-     0% {
-         opacity: 0;
-        padding-left:380px;
-    }
-     100% {
-         opacity: 1;
-        padding-left:481px;
-    }
-}
+
+
 /* services */
  .service-content {
      background-image: url('cup-of-coffee-1280537_1280-001.jpg');
