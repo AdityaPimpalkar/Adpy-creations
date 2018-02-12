@@ -87,149 +87,235 @@ body{
 }
 
 .wd-flow-pointer {
-    position: relative;
-    top: 32px;
-    left: 220px;
-    width: 94px;
-    border-bottom: 3px solid #fff;
+  position: absolute;
+  height: 3px;
+  width: 0px;
+  margin: 0 auto;
+  display: block;
+  top: 120px;
+  left: 220px;
+  background-color :#000;
+  transition: width .3s ease;
 }
 
 .wde-flow-pointer {
-  position: relative;
-  top: 27px;
-  left: 533px;
-  width: 94px;
-  border-bottom: 3px solid #fff;
+  position: absolute;
+  top: 120px;
+  height: 3px;
+  right: 224px;
+  width: 0px;
+  background-color :#000;
+  transition: width .3s ease;
 }
 
 .wds-flow-pointer {
-  position: relative;
-  top: 395px;
+  position: absolute;
+  height: 3px;
+  top: 490px;
   left: 221px;
-  width: 94px;
-  border-bottom: 3px solid #fff;
+  width: 0px;
+  background-color :#000;
+  transition: width .3s ease;
 }
 
 .wdse-flow-pointer {
-  position: relative;
-  top: 398px;
-  left: 421px;
-  width: 94px;
-  border-bottom: 3px solid #fff;
+  position: absolute;
+  height: 3px;
+  top: 490px;
+  right: 224px;
+  width: 0px;
+  background-color :#000;
+  transition: width .3s ease;
 }
 
-.wdm-pointer,.wdem-pointer,.wdsm-pointer {
-  position: relative;
-  width: 122px;
-  border-bottom: 3px solid #fff;
+.wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer {
+  height: 3px;
+  position: absolute;
+  display: block;
+  width: 0px;
+  transition: width .3s;
 }
 
 .wdm-pointer {
-    top: 75px;
-    left: 291px;
-    -ms-transform: rotate(50deg);
-    -webkit-transform: rotate(50deg);
-    transform: rotate(50deg);
+  top: 167px;
+  left: 291px;
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
 }
 
 .wdem-pointer {
-  top: 70px;
-  left: 433px;
+  top: 167px;
+  right: 295px;
+  width: 0px;
+  display: block;
+  transition: width .3s;
   -ms-transform: rotate(130deg);
   -webkit-transform: rotate(130deg);
   transform: rotate(130deg);
 }
 
 .wdsm-pointer {
-  top: 346px;
+  top: 444px;
   left: 292px;
+  width: 0px;
+  display: block;
+  transition: width .3s;
   -ms-transform: rotate(130deg);
   -webkit-transform: rotate(130deg);
   transform: rotate(130deg);
 }
 
-
+.wdsem-pointer {
+  top: 444px;
+  right: 295px;
+  width: 122px;
+  display: block;
+  transition: width .3s;
+  -ms-transform: rotate(50deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
 
  .wd-flow,.wde-flow,.wds-flow,.wdse-flow {
    color: #fff;
   font-size: 19px;
   font-weight: bold;
 }
- .wd,.wde,.wds,.wdse {
+ .wd,.wds {
       text-align: center;
    transition: 1s fade-in;
    overflow: hidden;
    position: absolute;
    z-index: 10;
      pointer-events: none;
-     animation: leftslide 0.3s;
+}
+
+.wde,.wdse {
+     text-align: center;
+  transition: 1s fade-in;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+    pointer-events: none;
+    animation: leftslide 3s;
 }
 
 .wd {
   top: 110px;
    left: 102px;
    width: 140px;
+   animation: leftslidewd 0.3s;
 }
 
 .wde {
   width: 80px;
   top: 110px;
   left: 625px;
+  animation: leftslidewde 0.3s;
 }
 
 .wds {
   width: 80px;
   top:473px;
   left: 135px;
+  animation: leftslidewds 0.3s;
 }
 
 .wdse {
   width: 80px;
-  top:389px;
-  left: 521px;
+  top:476px;
+  left: 627px;
+  animation: leftslidewdse 0.3s;
 }
 
- @-webkit-keyframes leftslide {
+ @-webkit-keyframes leftslidewd {
      0% {
          opacity: 0;
-        padding-left:164px;
+         left:124px;
     }
      100% {
          opacity: 1;
-        padding-left:0px;
+        left:102px;
     }
 }
- @keyframes leftslide {
+ @keyframes leftslidewd {
      0% {
          opacity: 0;
-        padding-left:84px;
+        left:124px;
     }
      100% {
          opacity: 1;
-        padding-left:0px;
+        left:102px;
     }
 }
 
- @-webkit-keyframes rightslide {
+@keyframes leftslidewde {
+    0% {
+        opacity: 0;
+       left:605px;
+   }
+    100% {
+        opacity: 1;
+       left: 625px;
+   }
+}
+
+ @-webkit-keyframes leftslidewde {
      0% {
          opacity: 0;
-        padding-left:380px;
+         left:605px;
     }
      100% {
          opacity: 1;
-        padding-left:481px;
+         left:625px;
     }
 }
- @keyframes rightslide {
+
+@keyframes leftslidewds {
+  0% {
+      opacity: 0;
+     left:155px;
+ }
+  100% {
+      opacity: 1;
+     left:135px;
+ }
+}
+
+ @keyframes leftslidewds {
      0% {
          opacity: 0;
-        padding-left:380px;
+        left:155px;
     }
      100% {
          opacity: 1;
-        padding-left:481px;
+        left:135px;
     }
 }
+
+@keyframes leftslidewdse {
+  0% {
+      opacity: 0;
+     left:607px;
+ }
+  100% {
+      opacity: 1;
+     left:627px;
+ }
+}
+
+ @keyframes leftslidewdse {
+     0% {
+         opacity: 0;
+        left:607px;
+    }
+     100% {
+         opacity: 1;
+        left:627px;
+    }
+}
+
  .intro-bubble{
 
      position: relative;
@@ -250,7 +336,7 @@ body{
      float: left;
      color: #fff;
      position: relative;
-     top:125px;
+     top:140px;
      font-size: 55px;
      left: 160px;
      width: 240px;
@@ -265,7 +351,7 @@ body{
 float: left;
 left: 180px;
 color: #fff;
-top: 115px;
+top: 130px;
 border-left: 3px solid #fff;
 width: 13em;
 padding: 30px 0 30px 20px;
@@ -312,7 +398,6 @@ font-weight: bold;
      display: none;
 }
  .web-development,.web-design,.web-storage,.web-security {
-     display: inline-block;
      overflow: hidden;
      background-color: #000;
      opacity: 0.7;
