@@ -17,7 +17,39 @@ function closeNav() {
 $(document).ready(function() {
     $(window).resize(mediaSize);
     mediaSize();
-    
+    $(".welcome-message").mouseenter(
+        function() {
+            if (window.matchMedia('(min-width : 480px)').matches) {
+                $(".wd,.wde,.wds,.wdse").css("display", "");
+                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer").css(
+                {
+                    "width":"94px",
+                    "background-color":"#fff"
+                });
+                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css(
+                {
+                    "width":"122px",
+                    "background-color":"#fff"
+                });
+            }
+        }
+    ).mouseleave(
+        function() {
+            if (window.matchMedia('(min-width : 480px)').matches) {
+                $(".wd,.wde,.wds,.wdse").css("display", "none");
+                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer").css(
+                {
+                    "width":"0px",
+                    "background-color":"#000"
+                });
+                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css(
+                    {
+                        "width":"0px",
+                        "background-color":"#000"
+                    });
+            }
+        }
+    );
 
     $(".web-development").mouseenter(
         function() {
