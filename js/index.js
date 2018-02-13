@@ -20,33 +20,31 @@ $(document).ready(function() {
     $(".welcome-message").mouseenter(
         function() {
             if (window.matchMedia('(min-width : 480px)').matches) {
-                $(".wd,.wde,.wds,.wdse").css("display", "");
-                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer").css(
-                {
-                    "width":"94px",
-                    "background-color":"#fff"
-                });
-                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css(
-                {
-                    "width":"122px",
-                    "background-color":"#fff"
+                $(".wd,.wde,.wds,.wdse").css("display","block");
+                $(".wd").css({"animation" : "leftslidewd 0.3s forwards"});
+                $(".wde").css({"animation" : "leftslidewde 0.3s forwards"});
+                $(".wds").css({"animation" : "leftslidewds 0.3s forwards"});
+                $(".wdse").css({"animation" : "leftslidewdse 0.3s forwards"});
+                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer")
+                .css({"animation":"animateFlowWidthIn 0.3s forwards"});
+                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css({
+                    "animation":"animatePointerIn 0.3s forwards"
                 });
             }
         }
     ).mouseleave(
         function() {
             if (window.matchMedia('(min-width : 480px)').matches) {
-                $(".wd,.wde,.wds,.wdse").css("display", "none");
-                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer").css(
-                {
-                    "width":"0px",
-                    "background-color":"#000"
+                $(".wd,.wde,.wds,.wdse").css("display","block");
+                $(".wd").css({"animation" : "rightslidewd 0.3s forwards"});
+                $(".wde").css({"animation" : "rightslidewde 0.3s forwards"});
+                $(".wds").css({"animation" : "rightslidewds 0.3s forwards"});
+                $(".wdse").css({"animation" : "rightslidewdse 0.3s forwards"});
+                $(".wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer")
+                .css({"animation":"animateFlowWidthOut 0.3s forwards"});
+                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css({
+                        "animation":"animatePointerOut 0.3s forwards"
                 });
-                $(".wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer").css(
-                    {
-                        "width":"0px",
-                        "background-color":"#000"
-                    });
             }
         }
     );
