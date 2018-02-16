@@ -1,5 +1,8 @@
 /* Smartphones (portrait and landscape) ----------- */
  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     body {
+         background-color: #fff;
+     }
      .nav-icon {
          font-size: 45px;
          padding-top: 20px;
@@ -51,33 +54,50 @@
      .main-content{
          width: 47em;
          height: 550px;
+         background-image: none;
     }
      .intro-bubble{
          padding-top: 110px;
+         width: 33em;
          padding-bottom: 20px;
          pointer-events: none;
     }
+    .wd,.wde,.wds,.wdse {
+        display: none;
+    }
+    .wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer {
+        display: none;
+    }
+    .wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer {
+        display: none;
+    }
      .welcome-message {
-         border: none;
-         border-radius: 0%;
-         padding: 0;
-         width: 26em;
-         height: 165px;
+         background: none;
+         width: 33em;
+         opacity: 1;
+         height: 460px;
     }
-     .welcome-text {
-         font-size: 35px;
-         width: 9em;
+     .title-head {
+         float: none;
+         left: 0;
+         top: 0;
+         padding: 20 0 10px;
+         text-align: center;
+         border-bottom: 3px solid #000; 
          margin: 0 auto;
-         padding: 15px 0;
-         border-bottom: 3px solid #000;
-    }
-     .replace-text {
-         display: block;
-         margin: 0 auto;
-         font-size: 32px;
+         color: #000;
+     }
+     .content-desc {
+         float: none;
+         left: 0;
          padding: 20px 0;
-         width: 18em;
-    }
+         border: none;
+         top: 0;
+         font-size: 33px;
+         text-align: center;
+         margin: 0 auto;
+         color: #000;
+     }
      .service-block {
          width: 47em;
          height: 820px;
@@ -311,6 +331,106 @@
     }
     /* iPads (portrait and landscape) ----------- */
      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+            .intro-bubble {
+                    width: 51em;
+                    padding: 9ss0px 0s;
+            }
+            .wde,.wdse {
+                left: 570px;
+            }
+            @keyframes leftslidewde {
+                0% {
+                    opacity: 1;
+                   left:570px;
+               }
+                100% {
+                    opacity: 1;
+                   left: 590px;
+               }
+            }
+            
+             @-webkit-keyframes leftslidewde {
+                 0% {
+                     opacity: 1;
+                     left:570px;
+                }
+                 100% {
+                     opacity: 1;
+                     left:590px;
+                }
+            }
+            
+            @keyframes rightslidewde {
+                0% {
+                    opacity: 1;
+                   left:590px;
+               }
+                100% {
+                    opacity: 0;
+                   left: 570px;
+               }
+            }
+            
+             @-webkit-keyframes rightslidewde {
+                 0% {
+                     opacity: 1;
+                     left:590px;
+                }
+                 100% {
+                     opacity: 0;
+                     left:570px;
+                }
+            }
+
+            @keyframes leftslidewdse {
+                0% {
+                    opacity: 1;
+                   left:570px;
+               }
+                100% {
+                    opacity: 1;
+                   left: 590px;
+               }
+            }
+            
+             @-webkit-keyframes leftslidewdse {
+                 0% {
+                     opacity: 1;
+                     left:570px;
+                }
+                 100% {
+                     opacity: 1;
+                     left:590px;
+                }
+            }
+            
+            @keyframes rightslidewdse {
+                0% {
+                    opacity: 1;
+                   left:590px;
+               }
+                100% {
+                    opacity: 0;
+                   left: 570px;
+               }
+            }
+            
+             @-webkit-keyframes rightslidewdse {
+                 0% {
+                     opacity: 1;
+                     left:590px;
+                }
+                 100% {
+                     opacity: 0;
+                     left:570px;
+                }
+            }
+            .title-head {
+                left: 150;
+            }
+            .content-desc {
+                left: 166px;
+            }
 			 .service-block {
 					 width: 52em;
 			}
@@ -339,7 +459,7 @@
 			 .robust-coding {
 					 left: 0;
 					 top: 10px;
-			}
+            }
 			 .business-understanding {
 					 left: 0;
 			}
@@ -364,28 +484,44 @@
      @media only screen and (min-device-width : 480px) and (max-device-width : 768px) {
          .intro-bubble{
              width: 100%;
+             pointer-events: none;
+        }
+        .wd,.wde,.wds,.wdse {
+            display: none;
+        }
+        .wdm-pointer,.wdem-pointer,.wdsm-pointer,.wdsem-pointer {
+            display: none;
+        }
+        .wd-flow-pointer,.wde-flow-pointer,.wds-flow-pointer,.wdse-flow-pointer {
+            display: none;
         }
          .welcome-message {
-             border: none;
-             border-radius: 0%;
-             padding: 0;
-             width: 18em;
-             height: 165px;
-        }
-         .welcome-text {
-             font-size: 28px;
-             width: 9em;
              margin: 0 auto;
-             padding: 15px 0;
-             border-bottom: 3px solid #000;
+             width: 32em;
+             height: 400px;
         }
-         .replace-text {
-             display: block;
-             margin: 0 auto;
-             font-size: 26px;
-             padding: 20px 0;
-             width: 18em;
-        }
+         .title-head {
+             position: static;
+             float: none;
+             left: 0;
+             padding: 60px 0 10px 0;
+             margin: auto;
+             border-bottom: 3px solid #fff;
+             text-align: center;
+             width: 160px;
+             font-size: 38px;
+         }
+         .content-desc {
+            position: static;
+            float: none;
+            left: 0;
+            padding: 20px 0;
+            margin: 0 auto;
+            border-left: none;
+            text-align: center;
+            width: 350px;
+            font-size: 22px; 
+         }
          .service-block {
              height: 530px;
              width: 36em;
@@ -393,6 +529,7 @@
          .services,.services-two {
              height: 210px;
              float: none;
+             margin: 0 auto;
              width: 35em;
         }
          .web-development,.web-design,.web-storage,.web-security {
@@ -401,12 +538,14 @@
              margin: 15px 10px;
         }
          .wd-img,.wde-img,.wds-img,.wdse-img {
+             position: relative;
              padding-top: 10px;
              margin: 0 auto;
              width: 60px;
              transition: 0.2s;
         }
          .wd-hd,.wde-hd,.wds-hd,.wdse-hd {
+             position: relative;
              font-size: 20px;
              font-weight: bold;
              padding-top: 10px;
@@ -421,6 +560,7 @@
              display: none;
         }
          .wd-fwd,.wde-fwd,.wds-fwd,.wdse-fwd {
+             position: relative;
              display: block;
              width: 20px;
              margin: 0 auto;
@@ -541,6 +681,11 @@
         }
          .biu-back {
              float: left;
+             padding: 15px 0;
+        }
+
+        .more-biu-content {
+            padding-top: 10px;
         }
 
         @-webkit-keyframes biu-norm{
@@ -689,6 +834,11 @@
          .sci-back {
              float: left;
         }
+
+        .more-sci-content {
+            height: 140px;
+        }
+
         @-webkit-keyframes sci-content-animate {
             0%{
                height: 120px;
@@ -745,12 +895,10 @@
               left: 345px;
            }
     }
+    .work-content {
+        height: 500px;
+    }
 
 
     }
 
-    /* Large screens ----------- */
-     @media only screen and (min-width : 1824px) {
-        .service-block {
-          width: 76em;
-        }
