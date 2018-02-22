@@ -418,9 +418,8 @@ $(document).ready(function() {
       $(this).css({
         "animation":"roc-content-animate 0.3s",
         "float":"none",
-        "height":"335px",
-        "width":"610px",
-        "padding":"10px 0"
+        "height":"355px",
+        "width":"610px"
       });
       $(".creativity,.business-understanding,.social-integration").css("display", "none");
       $(".roc-head").css({"float":"none","padding":"10px 0","border-bottom": "2px solid #fff"});
@@ -454,8 +453,7 @@ $(document).ready(function() {
         "animation":"none",
         "height":"120px",
         "width":"270px",
-        "left":"0px",
-        "padding":"0 0"
+        "left":"0px"
       });
       $(".roc-head").css({
         "float":"left",
