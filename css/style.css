@@ -6,6 +6,10 @@ body{
      background: #000;
      font-family: 'PT Sans', sans-serif;
 }
+input {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+}
  @-webkit-keyframes opaue {
      0%{
         opacity: 0
@@ -1222,4 +1226,57 @@ body{
         top: 30px;
         left: 620px;
     }
+}
+
+.contact-block {
+    height: 700px;
+    width: 100%;
+    background-image: url('student-849826_1280.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.ct-head {
+    width: 95px;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-top: 20px; 
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.contact-fields {
+    width: 60em;
+    height: 550px;
+    background-color: #000;
+    opacity: 0.7;
+    margin: 20px auto;
+}
+
+.first-name-field,.last-name-field,.email-field {
+    width: 700px;
+    padding: 40px 0 20px 0; 
+    margin: 0 auto;
+}
+.last-name-field,.email-field,.message-field {
+    width: 700px;
+    padding: 20px 0 20px 0; 
+    margin: 0 auto;
+}
+
+.fn-box,.ln-box,.email-box,.message-box {
+    font-size: 22px;
+    font-weight: bold;
+    border-width: 0px; 
+    border: 1px dotted;
+    width: 700px;
+    height: 40px;
+}
+
+.message-box {
+    font-size: 17px;
+    width: 700px;
+    height: 240px;
 }
