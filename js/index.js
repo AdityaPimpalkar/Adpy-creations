@@ -13,6 +13,91 @@ function closeNav() {
         $(".nav").css("width", "0px");
     }
 }
+    var count = 0;
+    function nextImg() {
+        count++;
+        console.log(count);
+        if (window.matchMedia('(min-width : 1024px) and (max-width: 2650px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-1025px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1025px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1025px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-2050px)"});
+                $(".dev-img-two").css({"transform":"translateX(-2050px)"});
+                $(".dev-img-three").css({"transform":"translateX(-2050px)"});
+            }
+            else if (count >= 1) {
+                count = 2;
+            }
+        }
+        if (window.matchMedia('(min-width : 768px) and (max-width: 1024px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-752px)"});
+                $(".dev-img-two").css({"transform":"translateX(-752px)"});
+                $(".dev-img-three").css({"transform":"translateX(-752px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1506px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1506px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1506px)"});
+            }
+            else if (count >= 1) {
+                count = 2;
+            }
+        }
+    }
+    function prevImg() {
+        count--;
+        console.log(count);
+        if (window.matchMedia('(min-width : 1024px) and (max-width: 2650px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-1025px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1025px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1025px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-2050px)"});
+                $(".dev-img-two").css({"transform":"translateX(-2050px)"});
+                $(".dev-img-three").css({"transform":"translateX(-2050px)"});
+            }
+            else if (count <= 0) {
+                count = 0;
+            }
+        }
+        if (window.matchMedia('(min-width : 768px) and (max-width: 1024px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-752px)"});
+                $(".dev-img-two").css({"transform":"translateX(-752px)"});
+                $(".dev-img-three").css({"transform":"translateX(-752px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1506px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1506px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1506px)"});
+            }
+            else if (count <= 0) {
+                count = 0;
+            }
+        }
+    }
 
 $(document).ready(function() {
     $(window).resize(mediaSize);
@@ -541,6 +626,10 @@ $(document).ready(function() {
       $(".sci-fwd").show();
       $(".more-sci-content").hide().css("width","700px");
       $(".sci-back").hide().css("float","none");
+    } 
+
+    function prevImg(count) {
+
     }
 
     if (window.matchMedia('(min-width : 768px) and (max-width: 2650px)').matches) {
@@ -573,5 +662,6 @@ $(document).ready(function() {
     $(".cr-back").hide();
     $(".roc-back").hide();
     $(".sci-back").hide();
+
 
 });
