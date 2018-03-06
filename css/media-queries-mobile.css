@@ -388,14 +388,20 @@
     }
      @media only screen and (min-device-width : 769px) and (max-device-width : 963px) {
          .service-block {
-             width: 56em;
+             height: 730px;
+             width: 50em;
         }
-         .services,.services-two {
-             width: 26em;
+        .services,.services-two {
+            float: none;
+            width: 24em;
+            margin: 10px auto;
         }
-         .web-development,.web-design,.web-storage,.web-security {
-             margin: 0;
+
+        .web-development,.web-design,.web-storage,.web-security {
+            margin: 0px ;
+            width: 13em;
         }
+         
          .wd-inText, .wde-inText, .wds-inText, .wdse-inText {
              width: 197px;
         }
@@ -502,17 +508,7 @@
             .content-desc {
                 left: 166px;
             }
-			 .service-block {
-					 width: 52em;
-			}
-			 .services,.services-two {
-					 width: 26em;
-					 margin: 10px 0;
-			}
-			 .web-development,.web-design,.web-storage,.web-security {
-					 margin: 0;
-					 width: 13em;
-			}
+	
 			 .wd-inText, .wde-inText, .wds-inText, .wdse-inText {
 					 width: 197px;
 			}
@@ -885,6 +881,21 @@
                    left: 440px;
                }
            }
+
+           .dev-slideshow {
+               width: 47em;
+           }
+           .dev-img-one,.dev-img-two,.dev-img-three {
+                width: 47em;
+            }
+            .next-image {
+                top: 210px;
+                left: 590px;
+            }
+            .dev-desc {
+                width: 47em;
+            }
+
         .contact-fields {
             width: 50em;
         }
