@@ -55,6 +55,44 @@ function closeNav() {
                 count = 2;
             }
         }
+        if (window.matchMedia('(min-width : 480px) and (max-width : 768px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-640px)"});
+                $(".dev-img-two").css({"transform":"translateX(-640px)"});
+                $(".dev-img-three").css({"transform":"translateX(-640px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1280px)"});
+            }
+            else if (count >= 1) {
+                count = 2;
+            }
+        }    
+        if (window.matchMedia('(min-device-width : 320px) and (max-device-width : 480px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-640px)"});
+                $(".dev-img-two").css({"transform":"translateX(-640px)"});
+                $(".dev-img-three").css({"transform":"translateX(-640px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1280px)"});
+            }
+            else if (count >= 1) {
+                count = 2;
+            }
+        }
     }
     function prevImg() {
         count--;
@@ -92,6 +130,25 @@ function closeNav() {
                 $(".dev-img-one").css({"transform":"translateX(-1506px)"});
                 $(".dev-img-two").css({"transform":"translateX(-1506px)"});
                 $(".dev-img-three").css({"transform":"translateX(-1506px)"});
+            }
+            else if (count <= 0) {
+                count = 0;
+            }
+        }
+        if (window.matchMedia('(min-width : 480px) and (max-width : 768px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-640px)"});
+                $(".dev-img-two").css({"transform":"translateX(-640px)"});
+                $(".dev-img-three").css({"transform":"translateX(-640px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1280px)"});
             }
             else if (count <= 0) {
                 count = 0;
