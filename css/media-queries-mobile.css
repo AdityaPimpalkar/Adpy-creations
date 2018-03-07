@@ -297,6 +297,33 @@
          font-size: 29px;
     }
 
+    .developer-block {
+        background-image: none;
+    }
+
+    .dev-head {
+        color: #000;
+        font-size: 40px;
+        width: 175px;
+        border-bottom: 3px solid #000; 
+    }
+
+    .next-image {
+        left: 507px;
+    }
+
+    .dev-slideshow {
+        width: 42em;
+    }
+
+    .dev-img-one,.dev-img-two,.dev-img-three {
+        width: 42em;
+    }
+
+    .dev-desc {
+        width: 42em;
+    }
+
     .contact-block {
         height: 1050px;
         background-image: none;
@@ -372,7 +399,7 @@
     }
 }
 		/*-- LAPTOPS --*/
-     @media only screen and (min-device-width : 1024px) and (max-device-width : 1153px) {
+     @media only screen and (min-device-width : 852px) and (max-device-width : 1153px) {
          .service-block {
              width: 60em;
         }
@@ -386,24 +413,40 @@
              width: 197px;
         }
     }
-     @media only screen and (min-device-width : 769px) and (max-device-width : 963px) {
+     @media only screen and (min-device-width : 769px) and (max-device-width : 852px) {
          .service-block {
-             height: 730px;
-             width: 50em;
+             height: 760px;
+             width: 40em;
         }
         .services,.services-two {
             float: none;
-            width: 24em;
+            width: 36em;
             margin: 10px auto;
         }
 
         .web-development,.web-design,.web-storage,.web-security {
-            margin: 0px ;
-            width: 13em;
+            width: 16em;
         }
          
          .wd-inText, .wde-inText, .wds-inText, .wdse-inText {
              width: 197px;
+        }
+    }
+    @media only screen and (min-device-width : 852px) and (max-device-width : 960px) {
+        .service-block {
+            width: 52em;
+       }
+       .services,.services-two {
+           float: left;
+           width: 26em;
+       }
+       .web-development,.web-design,.web-storage,.web-security {
+            margin: 0;
+            width: 13em;
+        }
+     
+        .wd-inText, .wde-inText, .wds-inText, .wdse-inText {
+            width: 197px;
         }
     }
     /* iPads (portrait and landscape) ----------- */
@@ -1365,6 +1408,34 @@
 
         .more-sci-content {
             height: 140px;
+        }
+
+        .dev-slideshow {
+            width: 40em;
+        }
+
+        .previous-image,.next-image {
+            width: 60px;
+            height: 70px;
+        }
+
+        .next-image {
+            left: 516px;
+
+        }
+
+        .dev-img-one,.dev-img-two,.dev-img-three {
+            height: 520px;
+            width: 40em;
+        }
+
+        .dev-desc {
+            width: 40em;
+        }
+
+        .dev-content {
+            font-size: 22px;
+            padding: 40px 0;
         }
 
         .contact-fields {
