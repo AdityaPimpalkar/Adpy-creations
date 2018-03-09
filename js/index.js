@@ -16,7 +16,6 @@ function closeNav() {
     var count = 0;
     function nextImg() {
         count++;
-        console.log(count);
         if (window.matchMedia('(min-width : 1024px) and (max-width: 2650px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
@@ -81,13 +80,13 @@ function closeNav() {
                 $(".dev-img-three").css({"transform":"translateX(0px)"});
             }
             if(count === 1) {
-                $(".dev-img-one").css({"transform":"translateX(-640px)"});
-                $(".dev-img-two").css({"transform":"translateX(-640px)"});
-                $(".dev-img-three").css({"transform":"translateX(-640px)"});
+                $(".dev-img-one").css({"transform":"translateX(-672px)"});
+                $(".dev-img-two").css({"transform":"translateX(-672px)"});
+                $(".dev-img-three").css({"transform":"translateX(-672px)"});
             }else if(count === 2) {
-                $(".dev-img-one").css({"transform":"translateX(-1280px)"});
-                $(".dev-img-two").css({"transform":"translateX(-1280px)"});
-                $(".dev-img-three").css({"transform":"translateX(-1280px)"});
+                $(".dev-img-one").css({"transform":"translateX(-1343px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1343px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1343px)"});
             }
             else if (count >= 1) {
                 count = 2;
@@ -96,7 +95,6 @@ function closeNav() {
     }
     function prevImg() {
         count--;
-        console.log(count);
         if (window.matchMedia('(min-width : 1024px) and (max-width: 2650px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
@@ -149,6 +147,25 @@ function closeNav() {
                 $(".dev-img-one").css({"transform":"translateX(-1280px)"});
                 $(".dev-img-two").css({"transform":"translateX(-1280px)"});
                 $(".dev-img-three").css({"transform":"translateX(-1280px)"});
+            }
+            else if (count <= 0) {
+                count = 0;
+            }
+        }
+        if (window.matchMedia('(min-device-width : 320px) and (max-device-width : 480px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-672px)"});
+                $(".dev-img-two").css({"transform":"translateX(-672px)"});
+                $(".dev-img-three").css({"transform":"translateX(-672px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-1343px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1343px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1343px)"});
             }
             else if (count <= 0) {
                 count = 0;
