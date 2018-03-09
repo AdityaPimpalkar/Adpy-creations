@@ -1572,7 +1572,11 @@
     .work-content {
         height: 500px;
     }
-    
+
+    .contact-block {
+        height: 1050px;
+    }
+
     .contact-fields {
         width: 40em;
     }
@@ -1627,3 +1631,332 @@
 
     }
 
+@media only screen and (min-device-width : 1680px) {
+    .main-content {
+        height: 810px;
+    }
+    .intro-bubble {
+        height: 630px;
+        width: 80em;
+    }
+    .welcome-message {
+        height: 630px;
+    }
+    .title-head {
+        top: 191px;
+        font-size: 77px;
+        left: 276px;
+        width: 332px;
+    }
+    .content-desc {
+        left: 303px;
+        top: 185px;
+        border-left: 6px solid #fff;
+        font-size: 31px;
+    }
+    .wd {
+        top: 120px;
+        left: 112px;
+        width: 225px;
+    }
+    @-webkit-keyframes leftslidewd {
+        0% {
+            opacity: 1;
+            left:132px;
+       }
+        100% {
+            opacity: 1;
+           left:112px;
+        }
+    }
+    @keyframes leftslidewd {
+        0% {
+            opacity: 1;
+            left:132px;
+       }
+        100% {
+            opacity: 1;
+           left:112px;
+       }
+    }
+    @-webkit-keyframes rightslidewd {
+        0% {
+            opacity: 1;
+           left:112px;
+       }
+        100% {
+            opacity: 0;
+            left:132px;
+       }
+     }
+     @keyframes rightslidewd {
+        0% {
+            opacity: 1;
+           left:112px;
+       }
+        100% {
+            opacity: 0;
+            left:132px;
+       }
+     }
+    .wde {
+        top: 120px;
+        width: 108px;
+        left: 990px;
+    }
+    @keyframes leftslidewde {
+        0% {
+            opacity: 1;
+           left:970px;
+       }
+        100% {
+            opacity: 1;
+           left: 990px;
+       }
+    }
+    
+     @-webkit-keyframes leftslidewde {
+        0% {
+            opacity: 1;
+           left:970px;
+       }
+        100% {
+            opacity: 1;
+           left: 990px;
+       }
+    }
+    @keyframes rightslidewde {
+        0% {
+            opacity: 1;
+           left: 990px;
+       }
+        100% {
+            opacity: 0;
+           left:970px;
+       }
+    }
+    
+     @-webkit-keyframes rightslidewde {
+        0% {
+            opacity: 1;
+           left: 990px;
+       }
+        100% {
+            opacity: 0;
+           left:970px;
+       }
+    }
+    .wds {
+        width: 130px;
+        top: 585px;
+        left: 165px
+    }
+    @-webkit-keyframes leftslidewds {
+        0% {
+            opacity: 1;
+           left:185px;
+       }
+        100% {
+            opacity: 1;
+           left:165px;
+       }
+    }
+      
+    @keyframes leftslidewds {
+        0% {
+            opacity: 1;
+           left:185px;
+       }
+        100% {
+            opacity: 1;
+           left:165px;
+       }
+    }
+    @-webkit-keyframes rightslidewds {
+        0% {
+            opacity: 1;
+            left:165px;
+       }
+        100% {
+            opacity: 0;
+            left:185px;
+       }
+    }
+      
+    @keyframes rightslidewds {
+        0% {
+            opacity: 1;
+            left:165px;
+       }
+        100% {
+            opacity: 0;
+            left:185px;
+       }
+    }
+    .wdse {
+        width: 145px;
+        top: 585px;
+        left: 990px;
+    }
+    @keyframes leftslidewdse {
+        0% {
+            opacity: 1;
+           left:970px;
+       }
+        100% {
+            opacity: 1;
+           left: 990px;
+       }
+    }
+    
+     @-webkit-keyframes leftslidewdse {
+        0% {
+            opacity: 1;
+           left:970px;
+       }
+        100% {
+            opacity: 1;
+           left: 990px;
+       }
+    }
+    @keyframes rightslidewdse {
+        0% {
+            opacity: 1;
+           left: 990px;
+       }
+        100% {
+            opacity: 0;
+           left:970px;
+       }
+    }
+    
+     @-webkit-keyframes rightslidewdse {
+        0% {
+            opacity: 1;
+           left: 990px;
+       }
+        100% {
+            opacity: 0;
+           left:970px;
+       }
+    }
+
+    .wd-flow,.wde-flow,.wds-flow,.wdse-flow {
+        font-size: 32px;
+    }
+    .wd-flow-pointer {
+        height: 5px;
+        top: 145px;
+        left: 315px;
+    }
+    .wdm-pointer{
+        top: 203px;
+        left: 438px;
+    }
+    .wde-flow-pointer {
+        height: 5px;
+        top: 145px;
+        right: 313px;
+    }
+    .wdem-pointer {
+        top: 203px;
+        right: 435px;
+    }
+    .wds-flow-pointer {
+        height: 5px;
+        left: 315px;
+        top: 617px;
+    }
+    .wdsm-pointer {
+        top: 560px;
+        left: 437px;
+    }
+    .wdse-flow-pointer {
+        height: 5px;
+        top: 617px;
+        right: 313px;
+    }
+    .wdsem-pointer {
+        top: 560px;
+        right: 435px;
+    }
+    .wdm-pointer, .wdem-pointer, .wdsm-pointer, .wdsem-pointer {
+        height: 5px;
+    }
+    @-webkit-keyframes animateFlowWidthIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 150px;
+        }
+    }
+    @keyframes animateFlowWidthIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 150px;
+        }
+    }
+    
+    @-webkit-keyframes animateFlowWidthOut {
+        0% {
+            width: 150px;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @keyframes animateFlowWidthOut {
+        0% {
+            width: 150px;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @-webkit-keyframes animatePointerIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 152px;
+        }
+    }
+    @keyframes animatePointerIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 152px;
+        }
+    }
+    
+    @-webkit-keyframes animatePointerOut {
+        0% {
+            width: 152px
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @keyframes animatePointerOut {
+        0% {
+            width: 152px;
+        }
+        100% {
+            width: 0px;
+        }
+    
+    }
+    .service-block {
+        width: 75em;
+    }
+}
+
+@media only screen and (min-device-width : 1880px) {
+    .service-block {
+        width: 77em;
+    }
+}
