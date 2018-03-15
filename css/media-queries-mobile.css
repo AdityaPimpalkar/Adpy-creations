@@ -1635,6 +1635,14 @@
     .main-content {
         height: 810px;
     }
+    .nav-icon {
+        width: 50px;
+        padding-top: 20px;
+        padding-left: 40px;  
+    }
+    .hamburg {
+        width: 50px;
+    }
     .intro-bubble {
         height: 630px;
         width: 80em;
@@ -1688,7 +1696,7 @@
             opacity: 0;
             left:132px;
        }
-     }
+    }
      @keyframes rightslidewd {
         0% {
             opacity: 1;
@@ -1698,7 +1706,7 @@
             opacity: 0;
             left:132px;
        }
-     }
+    }
     .wde {
         top: 120px;
         width: 108px;
@@ -1956,6 +1964,317 @@
 }
 
 @media only screen and (min-device-width : 1880px) {
+    .main-content {
+        height: 920px;
+    }
+    .intro-bubble {
+        height: 720px;
+        width: 95em;
+    }
+    .welcome-message {
+        height: 720px;
+    }
+    .title-head {
+        top: 235px;
+        font-size: 86px;
+        left: 360px;
+        width: 343px;
+    }
+    .content-desc {
+        left: 384px;
+        top: 226px;
+        font-size: 38px;
+    }
+    .wd {
+        top: 130px;
+        left: 162px;
+        width: 245px;
+    }
+    .wd-flow, .wde-flow, .wds-flow, .wdse-flow {
+        font-size: 34px;
+    }
+    .wdm-pointer, .wdem-pointer, .wdsm-pointer, .wdsem-pointer {
+        height: 6px;
+    }
+    .wd-flow-pointer {
+        top: 158px;
+        left: 341px;
+    }
+    .wdm-pointer {
+        top: 227px;
+        left: 487px;
+    }
+    @-webkit-keyframes leftslidewd {
+        0% {
+            opacity: 1;
+            left:162px;
+       }
+        100% {
+            opacity: 1;
+           left:142px;
+        }
+    }
+    @keyframes leftslidewd {
+        0% {
+            opacity: 1;
+            left:162px;
+       }
+        100% {
+            opacity: 1;
+            left:142px;
+       }
+    }
+    @-webkit-keyframes rightslidewd {
+        0% {
+            opacity: 1;
+            left:142px;
+       }
+        100% {
+            opacity: 0;
+            left:162px;
+       }
+    }
+     @keyframes rightslidewd {
+        0% {
+            opacity: 1;
+            left:142px;
+       }
+        100% {
+            opacity: 0;
+            left:162px;
+       }
+    }
+    .wds {
+        top: 686px;
+        width: 138px;
+        left: 205px;
+    }
+    .wds-flow-pointer {
+        top: 724px;
+        left: 341px;
+    }
+    .wdsm-pointer {
+        top: 654px;
+        left: 487px;
+    }
+    @-webkit-keyframes leftslidewds {
+        0% {
+            opacity: 1;
+           left:205px;
+       }
+        100% {
+            opacity: 1;
+           left:185px;
+       }
+    }
+      
+    @keyframes leftslidewds {
+        0% {
+            opacity: 1;
+           left:205px;
+       }
+        100% {
+            opacity: 1;
+           left:185px;
+       }
+    }
+    @-webkit-keyframes rightslidewds {
+        0% {
+            opacity: 1;
+            left:185px;
+       }
+        100% {
+            opacity: 0;
+            left:205px;
+       }
+    }
+      
+    @keyframes rightslidewds {
+        0% {
+            opacity: 1;
+            left:185px;
+       }
+        100% {
+            opacity: 0;
+            left:205px;
+       }
+    }
+    .wde {
+        top: 130px;
+        width: 113px;
+        left: 1100px;
+    }
+    .wde-flow-pointer {
+        top: 158px;
+        right: 403px;
+    }
+    .wdem-pointer {
+        top: 227px;
+        right: 550px;
+    }
+    @keyframes leftslidewde {
+        0% {
+            opacity: 1;
+           left:1100px;
+       }
+        100% {
+            opacity: 1;
+           left: 1120px;
+       }
+    }
+    
+     @-webkit-keyframes leftslidewde {
+        0% {
+            opacity: 1;
+            left:1100px;
+       }
+        100% {
+            opacity: 1;
+            left: 1120px;
+       }
+    }
+    @keyframes rightslidewde {
+        0% {
+            opacity: 1;
+            left: 1120px;
+       }
+        100% {
+            opacity: 0;
+            left:1100px;
+       }
+    }
+    
+     @-webkit-keyframes rightslidewde {
+        0% {
+            opacity: 1;
+            left: 1120px;
+       }
+        100% {
+            opacity: 0;
+            left:1100px;
+       }
+    }
+    .wdse {
+        top: 682px;
+        left: 1100px;
+    }
+    .wdse-flow-pointer {
+        top: 724px;
+        right: 403px;
+    }
+    .wdsem-pointer {
+        top: 654px;
+        right: 550px;
+    }
+    @keyframes leftslidewdse {
+        0% {
+            opacity: 1;
+           left:1100px;
+       }
+        100% {
+            opacity: 1;
+           left: 1120px;
+       }
+    }
+    
+     @-webkit-keyframes leftslidewdse {
+        0% {
+            opacity: 1;
+            left:1100px;
+       }
+        100% {
+            opacity: 1;
+            left: 1120px;
+       }
+    }
+    @keyframes rightslidewdse {
+        0% {
+            opacity: 1;
+            left: 1120px;
+       }
+        100% {
+            opacity: 0;
+            left:1100px;
+       }
+    }
+    
+     @-webkit-keyframes rightslidewdse {
+        0% {
+            opacity: 1;
+            left: 1120px;
+       }
+        100% {
+            opacity: 0;
+            left:1100px;
+       }
+    }
+    @-webkit-keyframes animateFlowWidthIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 180px;
+        }
+    }
+    @keyframes animateFlowWidthIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 180px;
+        }
+    }
+    
+    @-webkit-keyframes animateFlowWidthOut {
+        0% {
+            width: 180px;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @keyframes animateFlowWidthOut {
+        0% {
+            width: 180px;
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @-webkit-keyframes animatePointerIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 182px;
+        }
+    }
+    @keyframes animatePointerIn {
+        0% {
+            width: 0px;
+        }
+        100% {
+            width: 182px;
+        }
+    }
+    
+    @-webkit-keyframes animatePointerOut {
+        0% {
+            width: 182px
+        }
+        100% {
+            width: 0px;
+        }
+    }
+    @keyframes animatePointerOut {
+        0% {
+            width: 182px;
+        }
+        100% {
+            width: 0px;
+        }
+    
+    }
     .service-block {
         width: 77em;
     }
