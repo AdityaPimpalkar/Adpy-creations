@@ -1,8 +1,15 @@
 function openNav() {
     if (window.matchMedia('(min-width : 480px)').matches) {
         $(".nav").css("width", "250px");
-    } else {
+    }
+    if(window.matchMedia('(min-width: 1440px)').matches){
         $(".nav").css("width", "300px");
+    }
+    if(window.matchMedia('(min-width: 1680px)').matches){
+        $(".nav").css("width", "350px");
+    }
+    if(window.matchMedia('(min-width: 1880px)').matches){
+        $(".nav").css("width", "380px");
     }
 }
 
@@ -210,7 +217,7 @@ $(document).ready(function() {
 
     $(".web-development").mouseenter(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wd-img").removeClass("wd-img").addClass("wdx-IMG");
                 $(".wd-hd").removeClass("wd-hd").addClass("wdh-HD");
                 $(".wd-inText").css("display", "");
@@ -218,7 +225,7 @@ $(document).ready(function() {
         }
     ).mouseleave(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wdx-IMG").removeClass("wdx-IMG").addClass("wd-img");
                 $(".wdh-HD").removeClass("wdh-HD").addClass("wd-hd");
                 $(".wd-inText").css("display", "none");
@@ -228,7 +235,7 @@ $(document).ready(function() {
 
     $(".web-design").mouseenter(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wde-img").removeClass("wde-img").addClass("wdex-IMG");
                 $(".wde-hd").removeClass("wde-hd").addClass("wdex-HD");
                 $(".wde-inText").css("display", "");
@@ -236,7 +243,7 @@ $(document).ready(function() {
         }
     ).mouseleave(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wdex-IMG").removeClass("wdex-IMG").addClass("wde-img");
                 $(".wdex-HD").removeClass("wdex-HD").addClass("wde-hd");
                 $(".wde-inText").css("display", "none");
@@ -247,7 +254,7 @@ $(document).ready(function() {
 
     $(".web-storage").mouseenter(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wds-img").removeClass("wds-img").addClass("wdsx-IMG");
                 $(".wds-hd").removeClass("wds-hd").addClass("wdsx-HD");
                 $(".wds-inText").css("display", "");
@@ -255,7 +262,7 @@ $(document).ready(function() {
         }
     ).mouseleave(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wdsx-IMG").removeClass("wdsx-IMG").addClass("wds-img");
                 $(".wdsx-HD").removeClass("wdsx-HD").addClass("wds-hd");
                 $(".wds-inText").css("display", "none");
@@ -265,7 +272,7 @@ $(document).ready(function() {
 
     $(".web-security").mouseenter(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wdse-img").removeClass("wdse-img").addClass("wdsxe-IMG");
                 $(".wdse-hd").removeClass("wdse-hd").addClass("wdsxe-HD");
                 $(".wdse-inText").css("display", "");
@@ -273,7 +280,7 @@ $(document).ready(function() {
         }
     ).mouseleave(
         function() {
-            if (window.matchMedia('(min-width : 768px) and (max-width : 1886px)').matches) {
+            if (window.matchMedia('(min-width : 768px) and (max-width : 2560px)').matches) {
                 $(".wdsxe-IMG").removeClass("wdsxe-IMG").addClass("wdse-img");
                 $(".wdsxe-HD").removeClass("wdsxe-HD").addClass("wdse-hd");
                 $(".wdse-inText").css("display", "none");
