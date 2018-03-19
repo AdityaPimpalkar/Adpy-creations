@@ -1643,6 +1643,15 @@
     .hamburg {
         width: 50px;
     }
+    .nav-items {
+        width: 22em;
+    }
+    .closebtn {
+        font-size: 64px;
+    }
+    .nav-list {
+        font-size: 40px;
+    }
     .intro-bubble {
         height: 630px;
         width: 80em;
@@ -1959,13 +1968,147 @@
     
     }
     .service-block {
-        width: 75em;
+        width: 96em;
+        height: 600px;
+    }
+    .se-hd {
+        font-size: 40px;
+        border-bottom: 5px solid #fff;
+    }
+    .services {
+        width: 48em;
+        height: 475px;
+    }
+    .services-two {
+        height: 475px;
+    }
+    .web-development, .web-design, .web-storage, .web-security {
+        width: 22em;
+        height: 455px;
+    }
+    .wd-img {
+        padding-top: 120px;
+        width: 80px;
+    }
+    .wdx-IMG {
+        padding-top: 40px;
+        width: 80px;
+    }
+    .wd-hd {
+        font-size: 35px;
+        width: 195px;
+        padding-bottom: 155px;
+    }
+    .wdh-HD {
+        font-size: 33px;
+        width: 195px;
+    }
+    @-webkit-keyframes wdx-uplift {
+        0% {
+            padding-top:120px;
+       }
+        100% {
+            padding-top:40px;
+       }
+   }
+    @keyframes wdx-uplift {
+        0% {
+            padding-top:120px;
+       }
+        100% {
+            padding-top:40px;
+       }
+   }
+   @-webkit-keyframes wdh-uplift {
+        0% {
+            padding-bottom: 30px;
+        }
+        100% {
+            padding-bottom: 30px;
+        }
+    }
+    @keyframes wdh-uplift {
+        0% {
+            
+            padding-bottom: 30px;
+        }
+        100% {
+            padding-bottom: 30px;
+        }
+    }
+    .wd-inText,.wde-inText,.wds-inText,.wdse-inText {
+        font-size: 23px;
+        width: 310px;
+    }
+    .wd-inText {
+        width: 350px;
+    }
+    .wde-img {
+        width: 80px;
+        padding-top: 120px;
+    }
+    .wdex-IMG {
+        padding-top: 40px;
+        width: 80px;
+    }
+    .wde-hd {
+        font-size: 33px;
+        padding-bottom: 155px;
+    }
+    .wdex-HD {
+        font-size: 35px;
+    }
+    .services-two {
+        width: 48em;
+        height: 475px;
+    }
+    .wds-img {
+        width: 80px;
+        padding-top: 120px;
+    }
+    .wdsx-IMG {
+        padding-top: 40px;
+        width: 80px;
+    }
+    .wds-hd {
+        font-size: 33px;
+        padding-bottom: 155px;
+        width: 130px;
+    }
+    .wdsx-HD {
+        font-size: 35px;
+        width: 130px;
+    }
+    .wdse-img {
+        width: 80px;
+        padding-top: 120px;
+    }
+    .wdsxe-IMG {
+        padding-top: 40px;
+        width: 80px;
+    }
+    .wdse-hd {
+        font-size: 33px;
+        width: 130px;
+        padding-bottom: 155px;
+    }
+    .wdsxe-HD {
+        font-size: 35px;
     }
 }
 
 @media only screen and (min-device-width : 1880px) {
     .main-content {
         height: 920px;
+    }
+    .nav-items {
+        width: 24em;
+    }
+    .closebtn {
+        font-size: 64px;
+    }
+    .nav-list {
+        font-size: 40px;
     }
     .intro-bubble {
         height: 720px;
@@ -2276,6 +2419,254 @@
     
     }
     .service-block {
-        width: 77em;
+        width: 105em;
+        height: 640px;
     }
+    .se-hd {
+        font-size: 40px;
+        border-bottom: 5px solid #fff;
+    }
+    .services {
+        width: 53em;
+        height: 495px;
+    }
+    .services-two {
+        height: 485px;
+    }
+    .web-development, .web-design, .web-storage, .web-security {
+        width: 24em;
+        height: 485px;
+    }
+    .wd-img {
+        padding-top: 120px;
+        width: 100px;
+    }
+    .wdx-IMG {
+        padding-top: 40px;
+        width: 100px;
+    }
+    .wd-hd {
+        font-size: 35px;
+        width: 195px;
+        padding-bottom: 160px;
+    }
+    .wdh-HD {
+        font-size: 35px;
+        width: 195px;
+    }
+    @-webkit-keyframes wdx-uplift {
+        0% {
+            padding-top:120px;
+       }
+        100% {
+            padding-top:40px;
+       }
+   }
+    @keyframes wdx-uplift {
+        0% {
+            padding-top:120px;
+       }
+        100% {
+            padding-top:40px;
+       }
+   }
+   @-webkit-keyframes wdh-uplift {
+        0% {
+            padding-bottom: 30px;
+        }
+        100% {
+            padding-bottom: 30px;
+        }
+    }
+    @keyframes wdh-uplift {
+        0% {
+            
+            padding-bottom: 30px;
+        }
+        100% {
+            padding-bottom: 30px;
+        }
+    }
+    .wd-inText,.wde-inText,.wds-inText,.wdse-inText {
+        font-size: 25px;
+        width: 340px;
+    }
+    .wd-inText {
+        width: 331px;
+    }
+    .wde-img {
+        width: 100px;
+        padding-top: 120px;
+    }
+    .wdex-IMG {
+        padding-top: 40px;
+        width: 100px;
+    }
+    .wde-hd {
+        font-size: 35px;
+        padding-bottom: 160px;
+    }
+    .wdex-HD {
+        font-size: 35px;
+    }
+    .services-two {
+        width: 52em;
+        height: 475px;
+    }
+    .wds-img {
+        width: 100px;
+        padding-top: 120px;
+    }
+    .wdsx-IMG {
+        padding-top: 40px;
+        width: 100px;
+    }
+    .wds-hd {
+        font-size: 35px;
+        padding-bottom: 160px;
+        width: 130px;
+    }
+    .wdsx-HD {
+        font-size: 35px;
+        width: 130px;
+    }
+    .wdse-img {
+        width: 100px;
+        padding-top: 120px;
+    }
+    .wdsxe-IMG {
+        padding-top: 40px;
+        width: 100px;
+    }
+    .wdse-hd {
+        font-size: 35px;
+        width: 130px;
+        padding-bottom: 160px;
+    }
+    .wdsxe-HD {
+        font-size: 35px;
+    }
+    .work-content {
+        height: 590px;
+    }
+    .wk-hd {
+        font-size: 41px;
+        border-bottom: 5px solid #fff;
+    }
+    .work-block {
+        width: 1520px;
+    }
+    .robust-coding {
+        height: 180px;
+        width: 550px;
+        font-size: 41px;
+    }
+    .roc-head {
+        padding: 35px 0;
+    }
+    @-webkit-keyframes roc-animate {
+        0% {
+           height: 180px;
+           width: 550px;
+       }
+        100% {
+           height:200px;
+           width: 570px;
+           top:20px;
+           left: 20px;
+       }
+   }
+    @keyframes roc-animate {
+        0% {
+            height: 180px;
+            width: 550px;
+        }
+         100% {
+            height:200px;
+            width: 570px;
+            top:20px;
+            left: 20px;
+        }
+   }
+    @-webkit-keyframes roc-norm {
+        0% {
+           height:200px;
+           width: 570px;
+           top:20px;
+           left: 20px;
+       }
+        100%{
+           height: 180px;
+           width: 550px;
+       }
+   }
+    @keyframes roc-norm {
+        0% {
+            height:200px;
+            width: 570px;
+            top:20px;
+            left: 20px;
+        }
+         100%{
+            height: 180px;
+            width: 550px;
+        }
+   }
+    @-webkit-keyframes roc-content-animate {
+        0%{
+           height:140px;
+           width: 370px;
+           top:20px;
+           left: 20px;
+       }
+        100%{
+           height: 450px;
+           width: 100%;
+           left: 0;
+           top: 0;
+       }
+   }
+    @keyframes roc-content-animate {
+        0%{
+           height:140px;
+           width: 370px;
+           top:20px;
+           left: 20px;
+       }
+        100%{
+           height: 450px;
+           width: 100%;
+           left: 0;
+           top: 0;
+       }
+   }
+    @-webkit-keyframes roc-content-norm {
+        0%{
+           height: 360px;
+           width: 100%;
+           left: 0;
+           top: 0;
+       }
+        100%{
+           height:180px;
+           width: 550px;
+           top:30px;
+           left: 30px;
+       }
+   }
+    @keyframes roc-content-norm {
+        0%{
+           height: 360px;
+           width: 100%;
+           left: 0;
+           top: 0;
+       }
+        100%{
+            height:180px;
+            width: 550px;
+            top:30px;
+            left: 30px;
+       }
+   }
+    
 }
