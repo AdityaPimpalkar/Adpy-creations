@@ -302,7 +302,7 @@ if (window.matchMedia('(min-width:480px) and (max-width: 769px)').matches) {
     $(".img-wde").attr("src","images/design.svg").css("width","80px");
     $(".img-wds").attr("src","images/storage.svg").css("width","80px");
 	$(".img-wdse").attr("src","images/security.svg").css("width","80px");
- }else {
+ }else if(window.matchMedia('(min-width : 480px) and (max-width : 1440px)').matches){
 	$(".img-wd").attr("src","images/develop.svg").css("width","60px");
     $(".img-wde").attr("src","images/design.svg").css("width","60px");
     $(".img-wds").attr("src","images/storage.svg").css("width","60px");
