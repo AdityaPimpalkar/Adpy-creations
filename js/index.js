@@ -23,7 +23,7 @@ function closeNav() {
     var count = 0;
     function nextImg() {
         count++;
-        if (window.matchMedia('(min-width : 1440px) and (max-width: 2650px)').matches) {
+        if (window.matchMedia('(min-width : 1880px) and (max-width: 2650px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
                 $(".dev-img-two").css({"transform":"translateX(0px)"});
@@ -42,8 +42,26 @@ function closeNav() {
                 count = 2;
             }
         }
-
-        if (window.matchMedia('(min-width : 1024px) and (max-width: 1440px)').matches) {
+        if (window.matchMedia('(min-width : 1680px) and (max-width: 1880px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-1410px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1410px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1410px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-2820px)"});
+                $(".dev-img-two").css({"transform":"translateX(-2820px)"});
+                $(".dev-img-three").css({"transform":"translateX(-2820px)"});
+            }
+            else if (count >= 1) {
+                count = 2;
+            }
+        }
+        if (window.matchMedia('(min-width : 1024px) and (max-width: 1680px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
                 $(".dev-img-two").css({"transform":"translateX(0px)"});
@@ -122,7 +140,7 @@ function closeNav() {
     }
     function prevImg() {
         count--;
-        if (window.matchMedia('(min-width : 1024px) and (max-width: 1440px)').matches) {
+        if (window.matchMedia('(min-width : 1024px) and (max-width: 1680px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
                 $(".dev-img-two").css({"transform":"translateX(0px)"});
@@ -198,7 +216,26 @@ function closeNav() {
                 count = 0;
             }
         }
-        if (window.matchMedia('(min-width : 1440px) and (max-width: 2650px)').matches) {
+        if (window.matchMedia('(min-width : 1680px) and (max-width: 1880px)').matches) {
+            if(count ===0) {
+                $(".dev-img-one").css({"transform":"translateX(0px)"});
+                $(".dev-img-two").css({"transform":"translateX(0px)"});
+                $(".dev-img-three").css({"transform":"translateX(0px)"});
+            }
+            if(count === 1) {
+                $(".dev-img-one").css({"transform":"translateX(-1410px)"});
+                $(".dev-img-two").css({"transform":"translateX(-1410px)"});
+                $(".dev-img-three").css({"transform":"translateX(-1410px)"});
+            }else if(count === 2) {
+                $(".dev-img-one").css({"transform":"translateX(-2820px)"});
+                $(".dev-img-two").css({"transform":"translateX(-2820px)"});
+                $(".dev-img-three").css({"transform":"translateX(-2820px)"});
+            }
+            else if (count <= 0) {
+                count = 0;
+            }
+        }
+        if (window.matchMedia('(min-width : 1880px) and (max-width: 2650px)').matches) {
             if(count ===0) {
                 $(".dev-img-one").css({"transform":"translateX(0px)"});
                 $(".dev-img-two").css({"transform":"translateX(0px)"});
@@ -356,7 +393,7 @@ $(document).ready(function() {
         }
     }
 
-    if (window.matchMedia('(min-width : 1880px)').matches) {
+    if (window.matchMedia('(min-width : 1680px)').matches) {
         function handlerIn() {
             $(".business-understanding").css({
                 "animation": "biu-animate 0.5s forwards",
@@ -370,7 +407,7 @@ $(document).ready(function() {
             });
         }
     }  
-    if (window.matchMedia('(min-width : 1880px)').matches) {
+    if (window.matchMedia('(min-width : 1680px)').matches) {
         function handlerOut() {
             $(".business-understanding").css({
                 "animation": "biu-norm 0.5s forwards",
@@ -407,7 +444,7 @@ $(document).ready(function() {
         }
     }
 
-    if (window.matchMedia('(min-width : 1880px)').matches) {
+    if (window.matchMedia('(min-width : 1680px)').matches) {
         function mouseIn() {
             $(".creativity").css({
                 "animation": "cr-animate 0.5s forwards",
@@ -454,7 +491,7 @@ $(document).ready(function() {
             });
         }
     }
-    if (window.matchMedia('(min-width : 1880px)').matches) {
+    if (window.matchMedia('(min-width : 1680px)').matches) {
         function hoverIn() {
             $(".robust-coding").css({
                 "animation": "roc-animate 0.5s forwards",
@@ -507,7 +544,7 @@ $(document).ready(function() {
             });
         }
     }
-    if (window.matchMedia('(min-width : 1880px)').matches) {
+    if (window.matchMedia('(min-width : 1680px)').matches) {
         function entityIn() {
             $(".social-integration").css({
                 "animation": "sci-animate 0.3s forwards",
@@ -529,7 +566,7 @@ $(document).ready(function() {
                 "color": "#fff"
             });
             $(".sci-head").css({
-                "padding": "45px 0"
+                "padding": "40px 0"
             });
         }
     }
@@ -1003,7 +1040,7 @@ $(document).ready(function() {
             .on("mouseenter", mouseIn).on("mouseleave", mouseOut).on("click", CrLargeMediaContentEx);
     }
 
-    if (window.matchMedia('(min-width : 768px) and (max-width: 1440px)').matches) {
+    if (window.matchMedia('(min-width : 768px) and (max-width: 1680px)').matches) {
         $(".business-understanding").on("click", BuiContentEx);
         $(".biu-back").on("click", BuiContentNrm);
         $(".creativity").on("click", CrContentEx);
@@ -1024,7 +1061,7 @@ $(document).ready(function() {
         $(".sci-back").on("click", SciMediaContentNorm);
     }
 
-    if (window.matchMedia('(min-width : 1880px) and (max-width : 2560px)').matches) {
+    if (window.matchMedia('(min-width : 1680px) and (max-width : 2560px)').matches) {
         $(".business-understanding").on("click", BuiLargeMediaContentEx);
         $(".biu-back").on("click", BuiLargeMediaContentNrm);
         $(".creativity").on("click", CrLargeMediaContentEx);
