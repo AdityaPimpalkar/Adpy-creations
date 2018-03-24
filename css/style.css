@@ -1425,9 +1425,8 @@ input {
     margin: 0 auto;
 }
 
-.ig,.fb,.gh {
+.instagram,.facebook,.github {
     margin: 50px 83px;
     float: left;
     height: 100px;
-    width: 100px;
 }
