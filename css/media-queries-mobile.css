@@ -25,7 +25,7 @@
          width: 0;
     }
      .nav-items {
-         width: 14em;
+         width: 17.5em;
          margin: 0 auto;
     }
      .nav-list {
@@ -398,6 +398,11 @@
     
     .ig,.fb,.gh {
         margin: 50px 56px;
+    }
+    .instagram, .facebook, .github {
+        margin: 0px 0;
+        float: left;
+        height: 100px;
     }
 }
 		/*-- LAPTOPS --*/
@@ -971,6 +976,7 @@
         .submit {
             width: 600px;
         }
+
           
     }
     /* iPads (landscape) ----------- */
@@ -1507,11 +1513,10 @@
         margin: 0 auto;
     }
     
-    .ig,.fb,.gh {
-        margin: 50px 83px;
+    .instagram, .facebook, .github {
+        margin: 50px 53px;
         float: left;
         height: 100px;
-        width: 100px;
     }
 
         @-webkit-keyframes sci-content-animate {
@@ -1624,12 +1629,6 @@
         margin: 0 auto;
     }
     
-    .ig,.fb,.gh {
-        margin: 50px 56px;
-        float: left;
-        height: 100px;
-        width: 100px;
-    }
 
     }
 
@@ -2176,7 +2175,7 @@
            left: 20px;
        }
         100%{
-           height: 450px;
+           height: 470px;
            width: 100%;
            left: 0;
            top: 0;
@@ -2190,7 +2189,7 @@
            left: 20px;
        }
         100%{
-           height: 450px;
+           height: 470px;
            width: 100%;
            left: 0;
            top: 0;
@@ -2296,7 +2295,7 @@
         left: 150px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -2310,7 +2309,7 @@
         left: 150px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -2415,7 +2414,7 @@
         left: 930px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -2429,7 +2428,7 @@
        left: 930px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0px;
        top: 0;
@@ -2437,7 +2436,7 @@
 }
 @-webkit-keyframes sci-content-norm {
     0%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0px;
        top: 0;
@@ -2451,7 +2450,7 @@
 }
 @keyframes sci-content-norm {
     0%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0px;
        top: 0;
@@ -3194,7 +3193,7 @@
            left: 20px;
        }
         100%{
-           height: 450px;
+           height: 470px;
            width: 100%;
            left: 0;
            top: 0;
@@ -3208,7 +3207,7 @@
            left: 20px;
        }
         100%{
-           height: 450px;
+           height: 470px;
            width: 100%;
            left: 0;
            top: 0;
@@ -3314,7 +3313,7 @@
         left: 150px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -3328,7 +3327,7 @@
         left: 150px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -3433,7 +3432,7 @@
         left: 930px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0;
        top: 0;
@@ -3447,7 +3446,7 @@
        left: 930px;
    }
     100%{
-       height: 470px;
+       height: 480px;
        width: 100%;
        left: 0px;
        top: 0;
@@ -3655,10 +3654,10 @@
     height: 910px;
 }
 .first-name-field, .last-name-field, .email-field {
-    width: 1200px;
+    width: 1100px;
 }
 .fn-box, .ln-box, .email-box, .message-box {
-    width: 1200px;
+    width: 1100px;
     height: 80px;
     font-size: 32px;
 }
@@ -3666,13 +3665,13 @@
     height: 350px;
 }
 .message-field {
-    width: 1200px;
+    width: 1100px;
 }
 .submit-btn {
-    width: 1200px;
+    width: 1100px;
 }
 .submit {
-    width: 1200px;
+    width: 1100px;
     height: 80px;
 }
 .papl {
