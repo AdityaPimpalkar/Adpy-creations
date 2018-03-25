@@ -1,6 +1,6 @@
 function openNav() {
-    if (window.matchMedia('(min-width : 480px)').matches) {
-        $(".nav").css("width", "250px");
+    if (window.matchMedia('(min-width : 325px)').matches) {
+        $(".nav").css("width", "280px");
     }
     if(window.matchMedia('(min-width: 1440px)').matches){
         $(".nav").css("width", "300px");
