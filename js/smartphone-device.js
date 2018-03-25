@@ -6,9 +6,9 @@ if (window.matchMedia('(min-width : 320px) and (max-width : 480px)').matches) {
     $(".img-wde").attr("src","images/design-black.svg").css("width","120px");
     $(".img-wds").attr("src","images/storage-black.svg").css("width","120px");
 	$(".img-wdse").attr("src","images/security-black.svg").css("width","120px");
-	$(".ig").attr("src","images/instagram-draw-logo.svg");
-	$(".fb").attr("src","images/facebook-draw-logo.svg");
-	$(".gh").attr("src","images/github-draw-logo.svg");
+	$(".ig").attr("src","images/instagram-draw-logo.svg").css("width","100px");
+	$(".fb").attr("src","images/facebook-draw-logo.svg").css("width","100px");
+	$(".gh").attr("src","images/github-draw-logo.svg").css("width","100px");
 
 	//------WEB DEVELOPMENT---------//
 	$(".web-development").click(function(){
@@ -309,11 +309,15 @@ if (window.matchMedia('(min-width:480px) and (max-width: 769px)').matches) {
 			$(".ig").attr("src","images/instagram.svg").css("width","150px");
 			$(".fb").attr("src","images/facebook.svg").css("width","150px");
 			$(".gh").attr("src","images/github.svg").css("width","150px");
+			$(".back").attr("src","images/back.svg").css("width","67px");
 		}else if(window.matchMedia('(min-width : 480px) and (max-width : 1440px)').matches){
 			$(".img-wd").attr("src","images/develop.svg").css("width","60px");
 			$(".img-wde").attr("src","images/design.svg").css("width","60px");
 			$(".img-wds").attr("src","images/storage.svg").css("width","60px");
 			$(".img-wdse").attr("src","images/security.svg").css("width","60px");
+			$(".ig").attr("src","images/instagram.svg").css("width","100px");
+			$(".fb").attr("src","images/facebook.svg").css("width","100px");
+			$(".gh").attr("src","images/github.svg").css("width","100px");
 		}
  
 }
